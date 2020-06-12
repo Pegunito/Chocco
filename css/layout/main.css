@@ -1,35 +1,22 @@
 /*
-Error: Undefined variable: "$baseFontSize".
-        on line 8 of C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\base.scss
+Error: File to import not found or unreadable: blocks/hero-section.scss.
+       Load path: C:/Users/vaio/Desktop/Chocco/chocco-project/css/layout
+        on line 14 of C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\main.scss
 
-3: body {
-4:   height: 100%;
-5: }
-6: 
-7: body {
-8:   font-size: $baseFontSize;
-9:   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-10:   line-height: 1.42;
-11:   -webkit-font-smoothing: antialiased;
-12:   -moz-osx-font-smoothing: grayscale;
-13:   position: relative; 
+9: @import url('/css/layout/normalize.css');
+10: 
+11: //setups
+12: @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+13: 
+14: @import "blocks/hero-section.scss";
 
 Backtrace:
-C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\base.scss:8
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\main.scss:14
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +49,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$baseFontSize\".\A         on line 8 of C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\base.scss\A \A 3: body {\A 4:   height: 100%;\A 5: }\A 6: \A 7: body {\A 8:   font-size: $baseFontSize;\A 9:   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;\A 10:   line-height: 1.42;\A 11:   -webkit-font-smoothing: antialiased;\A 12:   -moz-osx-font-smoothing: grayscale;\A 13:   position: relative; "; }
+  content: "Error: File to import not found or unreadable: blocks/hero-section.scss.\A        Load path: C:/Users/vaio/Desktop/Chocco/chocco-project/css/layout\A         on line 14 of C:\Users\vaio\Desktop\Chocco\chocco-project\css\layout\main.scss\A \A 9: @import url('/css/layout/normalize.css');\A 10: \A 11: //setups\A 12: @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');\A 13: \A 14: @import \"blocks/hero-section.scss\";"; }

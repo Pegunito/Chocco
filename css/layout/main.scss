@@ -1,0 +1,15 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+//normalize
+@import url('/css/layout/normalize.css');
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+//blocks
+@import "blocks/hero-section";
