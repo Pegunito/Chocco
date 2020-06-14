@@ -1,16 +1,11 @@
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  font-size: $baseFontSize;
   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  font-size: $baseFontSize;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative; 
+  position: relative;
 }
 
 a {
@@ -44,19 +39,14 @@ img {
   max-width: 100%;
 }
 
+body, html {
+  height: 100%;
+}
+
 button {
   background: transparent;
   border: none;
   cursor: pointer;
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-  min-width: $containerWidth + 20px;
 }
 
 .container {
@@ -64,6 +54,9 @@ button {
   margin: 0 auto;
 }
 
-table {
-  border-collapse: collapse;
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  min-width: $containerWidth + 20px;
 }
+

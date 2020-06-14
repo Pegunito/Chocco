@@ -1,4 +1,5 @@
 .header {
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,10 +22,9 @@
 
 .menu__item {
   margin-right: 20px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+}
+.menu__item:last-child {
+  margin-right: 0;
 }
 
 .menu__link {

@@ -6,10 +6,48 @@ $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
 //normalize
-@import url('/css/layout/normalize.css');
+@import "./normalize.css";
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
+//fonts
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url('../../fonts/alegreyasans-regular-webfont.woff2') format('woff2'),
+       url('../../fonts/alegreyasans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url('../../fonts/alegreyasans-bold-webfont.woff2') format('woff2'),
+       url('../../fonts/alegreyasans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alegreya_sans_extraboldRg';
+  src: url('alegreyasans-extrabold-webfont.woff2') format('woff2'),
+       url('alegreyasans-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alegreya_sansregular';
+  src: url('alegreyasans-regular-webfont.woff2') format('woff2'),
+       url('alegreyasans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 //blocks
-@import "blocks/hero-section";
+@import "../layout/base.scss";
+@import "../blocks/hero-section.scss";
+@import "../blocks/header.scss";
+@import "../blocks/intro.scss";
+@import "../blocks/hero__row.scss";
+@import "../blocks/btn.scss";
