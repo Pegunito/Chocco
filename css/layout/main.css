@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  color: #666666;
 }
 
 a {
@@ -75,6 +76,7 @@ button {
 }
 
 .container {
+  position: relative;
   width: 940px;
   margin: 0 auto;
 }
@@ -218,4 +220,109 @@ button {
 .btn--theme--white:hover {
   color: #fff;
   background: #0b4d3c;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-chocco {
+  position: relative;
+  background: url(../../img/WhyChocco/leaf.png) left top 60% no-repeat;
+}
+.why-chocco:before {
+  content: url("../../img/WhyChocco/berry.png");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.why-chocco__preview {
+  margin-bottom: 56px;
+}
+
+.why-chocco__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.why-chocco__description {
+  color: #666666;
+}
+
+.why-chocco__description {
+  text-align: center;
+  padding: 0 26%;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  position: relative;
+  flex: 1;
+  padding: 0 3%;
+}
+.benefits__item:before {
+  content: url("../../img/WhyChocco/points.png");
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: translate(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+
+.benefit__img {
+  margin-bottom: 30px;
+}
+
+.benefit__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__img-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
