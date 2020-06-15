@@ -28,22 +28,6 @@ $darkGreen: #0b4d3c;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'alegreya_sans_extraboldRg';
-  src: url('alegreyasans-extrabold-webfont.woff2') format('woff2'),
-       url('alegreyasans-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'alegreya_sansregular';
-  src: url('alegreyasans-regular-webfont.woff2') format('woff2'),
-       url('alegreyasans-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 //blocks
 @import "../layout/base.scss";
 @import "../blocks/hero-section.scss";
@@ -56,3 +40,5 @@ $darkGreen: #0b4d3c;
 @import "../blocks/why-chocco.scss";
 @import "../blocks/benefits.scss";
 @import "../blocks/benefit.scss";
+@import "../blocks/reviews.scss";
+@import "../blocks/reviews__swithcer.scss";

@@ -1,0 +1,77 @@
+.reviews {
+  position: relative;
+  background: url("../../img/reviews/pattern.png") left bottom -30%no-repeat;
+
+  &:before {
+    content: url("../../img/reviews/berries.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+
+  &:after {
+    content: url("../../img/reviews/berry.png");
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+  }
+}
+
+.reviews__display {
+  background: #f8faf9;
+  padding: 50px 45px 34px;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -65px;
+  }
+}
+
+.reviews__display {
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__article {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.article__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.article__text {
+  margin-bottom: 36px;
+}
+
+.article__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
