@@ -4,6 +4,8 @@
   user-select: none;
 
   &--checkbox {
+    margin-bottom: 37px;
+
     .radio__visible {
       border-radius: 0;
 
@@ -43,4 +45,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.form__radio {
+  margin-right: 40px;
+  margin-bottom: 15px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.radio__title {
+  margin-left: 9px;
 }

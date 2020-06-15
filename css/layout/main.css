@@ -90,7 +90,7 @@ button {
   content: url("../../img/intro/leaf3.png");
 }
 .hero:after {
-  content: url("../../img/intro/berries1.png");
+  content: url("../../img/intro/berries1.png") url("../../img/intro/leaf1.png") url("../../img/intro/berry2.png") url("../../img/intro/leaf2.png");
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -127,7 +127,7 @@ button {
 }
 
 .menu__item {
-  margin-right: 20px;
+  margin-right: 27px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -158,13 +158,12 @@ button {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .content__description {
   font-size: 21px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .row__list {
@@ -172,7 +171,7 @@ button {
 }
 
 .row__item {
-  margin-right: 46px;
+  margin-right: 38px;
 }
 .row__item:last-child {
   margin-right: 0;
@@ -184,7 +183,7 @@ button {
 
 .row__pic {
   width: 45px;
-  margin-right: 7px;
+  margin-right: 6px;
 }
 
 .row__description {
@@ -246,14 +245,14 @@ button {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   text-transform: uppercase;
   color: #000;
 }
 
 .why-chocco {
   position: relative;
-  background: url(../../img/WhyChocco/leaf.png) left top 60% no-repeat;
+  background: url(../../img/WhyChocco/leaf.png) left top 40% no-repeat;
 }
 .why-chocco:before {
   content: url("../../img/WhyChocco/berry.png");
@@ -263,13 +262,13 @@ button {
 }
 
 .why-chocco__preview {
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 
 .why-chocco__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   color: #000;
   text-transform: uppercase;
 }
@@ -316,7 +315,7 @@ button {
 .benefit__title {
   font-size: 27px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #000;
 }
 
@@ -346,12 +345,12 @@ button {
 .reviews {
   position: relative;
   background: url("../../img/reviews/pattern.png") left bottom -30% no-repeat;
-}
-.reviews:before {
-  content: url("../../img/reviews/berries.png");
-  position: absolute;
-  bottom: -80px;
-  left: 0;
+  /*   &:before {
+      content: url("../../img/reviews/berries.png");
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+    } */
 }
 .reviews:after {
   content: url("../../img/reviews/berry.png");
@@ -361,8 +360,9 @@ button {
 }
 
 .reviews__display {
+  display: flex;
   background: #f8faf9;
-  padding: 50px 45px 34px;
+  padding: 50px 47px 50px;
   overflow: hidden;
   position: relative;
 }
@@ -379,10 +379,6 @@ button {
   top: -65px;
 }
 
-.reviews__display {
-  display: flex;
-}
-
 .reviews__avatar {
   width: 254px;
   height: 260px;
@@ -396,18 +392,18 @@ button {
 
 .reviews__article {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .article__title {
   font-size: 30px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .article__text {
-  margin-bottom: 36px;
+  margin-bottom: 15px;
 }
 
 .article__author {
@@ -455,6 +451,12 @@ button {
   height: 100vh;
   min-height: 650px;
   position: relative;
+}
+.delivery:before {
+  content: url("../../img/reviews/berries.png");
+  position: absolute;
+  top: -15%;
+  left: 0;
 }
 
 .form {
@@ -508,6 +510,9 @@ button {
   -webkit-user-select: none;
           user-select: none;
 }
+.radio--checkbox {
+  margin-bottom: 37px;
+}
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
@@ -540,6 +545,18 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.form__radio {
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+.form__radio:last-child {
+  margin-right: 0;
+}
+
+.radio__title {
+  margin-left: 9px;
 }
 
 .fixed-menu {

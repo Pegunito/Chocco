@@ -2,12 +2,12 @@
   position: relative;
   background: url("../../img/reviews/pattern.png") left bottom -30%no-repeat;
 
-  &:before {
+/*   &:before {
     content: url("../../img/reviews/berries.png");
     position: absolute;
-    bottom: -80px;
+    bottom: -10%;
     left: 0;
-  }
+  } */
 
   &:after {
     content: url("../../img/reviews/berry.png");
@@ -19,8 +19,9 @@
 }
 
 .reviews__display {
+  display: flex;
   background: #f8faf9;
-  padding: 50px 45px 34px;
+  padding: 50px 47px 50px;
   overflow: hidden;
   position: relative;
 
@@ -38,10 +39,6 @@
   }
 }
 
-.reviews__display {
-  display: flex;
-}
-
 .reviews__avatar {
   width: 254px;
   height: 260px;
@@ -55,18 +52,18 @@
 
 .reviews__article {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .article__title {
   font-size: 30px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .article__text {
-  margin-bottom: 36px;
+  margin-bottom: 15px;
 }
 
 .article__author {
@@ -74,4 +71,3 @@
   font-weight: bold;
   color: #000;
 }
-

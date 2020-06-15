@@ -1,6 +1,6 @@
 .why-chocco {
   position: relative;
-  background: url(../../img/WhyChocco/leaf.png) left top 60% no-repeat;
+  background: url(../../img/WhyChocco/leaf.png) left top 40% no-repeat;
 
   &:before {
     content: url("../../img/WhyChocco/berry.png");
@@ -11,13 +11,13 @@
 }
 
 .why-chocco__preview {
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 
 .why-chocco__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   color: #000;
   text-transform: uppercase;
 }

@@ -4,4 +4,11 @@
   height: 100vh;
   min-height: 650px;
   position: relative;
+
+  &:before {
+    content: url("../../img/reviews/berries.png");
+    position: absolute;
+    top: -15%;
+    left: 0;
+  }
 }
