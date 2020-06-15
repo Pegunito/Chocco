@@ -5,6 +5,9 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+//z-indexes
+$z-fixed-menu: 100;
+
 //normalize
 @import "./normalize.css";
 
@@ -42,3 +45,7 @@ $darkGreen: #0b4d3c;
 @import "../blocks/benefit.scss";
 @import "../blocks/reviews.scss";
 @import "../blocks/reviews__swithcer.scss";
+@import "../blocks/delivery.scss";
+@import "../blocks/form.scss";
+@import "../blocks/radio.scss";
+@import "../blocks/fixed-menu.scss";

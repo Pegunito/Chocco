@@ -1,11 +1,13 @@
 .btn {
   font-size: 19px;
   font-weight: bold;
-  padding: 18px 35px;
+  padding: 18px 37px;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 100px;
   line-height: 1;
+  display: inline-block;
+  border: none;
 
   &--theme--white {
     background: #fff;
@@ -14,6 +16,26 @@
     &:hover {
       color: #fff;
       background: $darkGreen;
+    }
+  }
+
+  &--theme--green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      color: $darkGreen;
+      background: #fff;
+    }
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+
+    &:hover {
+      color: $darkGreen;
     }
   }
 }
