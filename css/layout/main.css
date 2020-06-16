@@ -1,15 +1,20 @@
 @import "./normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("../../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-regular-webfont.woff") format("woff");
+  src: url("../../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "aAlegreya Sans";
+  src: url("../../fonts/alegreyasans-extrabold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("../../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bold-webfont.woff") format("woff");
-  font-weight: bold;
+  src: url("../../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 body {
@@ -90,7 +95,7 @@ button {
   content: url("../../img/intro/leaf3.png");
 }
 .hero:after {
-  content: url("../../img/intro/berries1.png") url("../../img/intro/leaf1.png") url("../../img/intro/berry2.png") url("../../img/intro/leaf2.png");
+  content: url("../../img/intro/berriesandleafs.png");
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -378,6 +383,12 @@ button {
   transform: translate(-50%);
   top: -65px;
 }
+.reviews__display:after {
+  content: url("../../img/reviews/branch.png");
+  position: absolute;
+  top: 2%;
+  right: 0;
+}
 
 .reviews__avatar {
   width: 254px;
@@ -517,7 +528,7 @@ button {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("") center center no-repeat;
+  background: url("../../img/form/okeyimg.png") center center no-repeat;
 }
 
 .radio__elem {
@@ -561,7 +572,7 @@ button {
 
 .fixed-menu {
   position: fixed;
-  top: 20%;
+  top: 35%;
   right: 3%;
   z-index: 100;
 }
@@ -570,7 +581,7 @@ button {
   margin-bottom: 5px;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: #365a49;
 }
 
 .fixed-menu__link {
@@ -587,7 +598,7 @@ button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #fff;
+  background: #365a49;
   position: absolute;
   top: 50%;
   left: 50%;

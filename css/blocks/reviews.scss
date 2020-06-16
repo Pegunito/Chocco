@@ -37,6 +37,14 @@
     transform: translate(-50%);
     top: -65px;
   }
+
+  &:after {
+    content: url("../../img/reviews/branch.png");
+    position: absolute;
+    top: 2%;
+    right: 0;
+
+  }
 }
 
 .reviews__avatar {
