@@ -1,0 +1,37 @@
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.switcher-avatar {
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  &--active {
+    border-color: #365a49;
+  }
+}
+
+.switcher-avatar:hover {
+  border-color: #365a49;
+}
+
+.switcher-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.switcher-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

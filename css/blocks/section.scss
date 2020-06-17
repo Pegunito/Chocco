@@ -1,0 +1,15 @@
+.section  {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--font-color--green {
+    color: $darkGreen;
+
+    h2 {
+      color: inherit;
+    }
+  }
+}

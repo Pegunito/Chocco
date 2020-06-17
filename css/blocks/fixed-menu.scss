@@ -1,0 +1,42 @@
+.fixed-menu {
+  position: fixed;
+  top: 35%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+
+  &--active {
+    .fixed-menu__link {
+      border-color: #365a49;
+    }
+  }
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #365a49;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fixed-menu__link:hover {
+  border-color: #365a49;
+}

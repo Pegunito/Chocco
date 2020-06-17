@@ -1,8 +1,12 @@
 
 body {
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  font-size: $baseFontSize;
+  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  position: relative;
+  color: #666666;
 }
 
 a {
@@ -46,11 +50,24 @@ button {
   cursor: pointer;
 }
 
+.container {
+  position: relative;
+  width: $containerWidth;
+  margin: 0 auto;
+}
+
 .wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  min-width: 1200px;
+  min-width: $containerWidth + 20px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  color: #000;
 }
 

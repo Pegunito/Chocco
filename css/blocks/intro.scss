@@ -1,0 +1,24 @@
+.hero__intro {
+ display: flex;
+ justify-content: space-between;
+}
+
+.hero__content {
+  width: 40%;
+}
+
+.hero__content > h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero__content > p {
+  font-size: 21px;
+  margin-bottom: 30px; 
+}
+
+.hero__content-img {
+  width: 45%;
+}

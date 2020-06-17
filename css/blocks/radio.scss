@@ -1,0 +1,61 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+
+  &--checkbox {
+    margin-bottom: 37px;
+
+    .radio__visible {
+      border-radius: 0;
+
+      &:before {
+        background: url("../../img/form/okeyimg.png") center center no-repeat;
+      }
+    }
+  }
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &:before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+
+  &:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #365a49;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__radio {
+  margin-right: 40px;
+  margin-bottom: 15px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.radio__title {
+  margin-left: 9px;
+}

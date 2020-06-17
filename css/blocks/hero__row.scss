@@ -1,0 +1,25 @@
+.row__list {
+  display: flex;
+}
+
+.row__item {
+  margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.items {
+  display: flex;
+}
+
+.row__pic {
+  width: 45px;
+  margin-right: 6px;
+}
+
+.row__text > p {
+  font-size: 16px;
+  max-width: 85px;
+}
