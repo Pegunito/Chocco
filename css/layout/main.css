@@ -80,6 +80,15 @@ button {
   min-width: 960px;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  color: #000;
+}
+
 .hero {
   background: url("../../img/intro/patern.png") right bottom no-repeat;
   background-color: #61c4d9;
@@ -102,7 +111,7 @@ button {
 }
 
 .hero__container {
-  background: url("../../img/intro/chocobars.png") right center/50% auto no-repeat;
+  /*  background: url("../../img/intro/chocobars.png") right center /50% auto no-repeat; */
   padding: 24px 0 45px;
   display: flex;
   flex-direction: column;
@@ -156,19 +165,28 @@ button {
 }
 
 .hero__intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
   width: 40%;
 }
 
-.content__title {
+.hero__content > h1 {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
-.content__description {
+.hero__content > p {
   font-size: 21px;
   margin-bottom: 30px;
+}
+
+.hero__content-img {
+  width: 45%;
 }
 
 .row__list {
@@ -191,7 +209,7 @@ button {
   margin-right: 6px;
 }
 
-.row__description {
+.row__text > p {
   font-size: 16px;
   max-width: 85px;
 }
@@ -242,17 +260,8 @@ button {
 .section--font-color--green {
   color: #0b4d3c;
 }
-.section--font-color--green .title {
+.section--font-color--green h2 {
   color: inherit;
-}
-
-.title {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 32px;
-  text-transform: uppercase;
-  color: #000;
 }
 
 .why-chocco {
@@ -270,7 +279,7 @@ button {
   margin-bottom: 36px;
 }
 
-.why-chocco__title {
+.why-chocco__preview > h2 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 2px;
@@ -278,11 +287,8 @@ button {
   text-transform: uppercase;
 }
 
-.why-chocco__description {
+.why-chocco__preview > p {
   color: #666666;
-}
-
-.why-chocco__description {
   text-align: center;
   padding: 0 26%;
 }
@@ -313,17 +319,6 @@ button {
   display: none;
 }
 
-.benefit__img {
-  margin-bottom: 30px;
-}
-
-.benefit__title {
-  font-size: 27px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #000;
-}
-
 .benefit {
   text-align: center;
 }
@@ -345,6 +340,17 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.benefit__img {
+  margin-bottom: 30px;
+}
+
+.benefit__text > h3 {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
 }
 
 .reviews {
@@ -406,7 +412,7 @@ button {
   margin-left: 16px;
 }
 
-.article__title {
+.reviews__article > h3 {
   font-size: 30px;
   font-weight: bold;
   color: #000;
@@ -437,6 +443,10 @@ button {
   position: relative;
 }
 .switcher-avatar--active {
+  border-color: #365a49;
+}
+
+.switcher-avatar:hover {
   border-color: #365a49;
 }
 
@@ -603,4 +613,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-menu__link:hover {
+  border-color: #365a49;
 }
