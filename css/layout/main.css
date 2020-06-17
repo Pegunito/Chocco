@@ -397,6 +397,9 @@ h2 {
 }
 
 .reviews__item {
+  display: none;
+}
+.reviews__item--active {
   display: flex;
 }
 
@@ -425,6 +428,7 @@ h2 {
 
 .article__text {
   margin-bottom: 15px;
+  padding-right: 131px;
 }
 
 .article__author > p {

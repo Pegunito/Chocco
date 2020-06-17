@@ -48,7 +48,11 @@
 }
 
 .reviews__item {
-  display: flex;
+  display: none;
+
+  &--active {
+    display: flex;
+  }
 }
 
 .reviews__avatar {
@@ -76,6 +80,7 @@
 
 .article__text {
   margin-bottom: 15px;
+  padding-right: 131px;
 }
 
 .article__author > p {
