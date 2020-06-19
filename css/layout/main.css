@@ -17,9 +17,16 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  font-size: 18px;
+}
+
+body, html {
+  height: 100%;
+}
+
 body {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,10 +65,6 @@ img {
   max-width: 100%;
 }
 
-body, html {
-  height: 100%;
-}
-
 button {
   background: transparent;
   border: none;
@@ -70,21 +73,23 @@ button {
 
 .container {
   position: relative;
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 .wrapper {
+  position: relative;
   min-height: 100%;
   overflow: hidden;
-  min-width: 960px;
+  width: 100%;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 1.7777777778rem;
   text-transform: uppercase;
   color: #000;
 }
@@ -93,26 +98,26 @@ h2 {
   background: url("../../img/intro/patern.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
 }
 .hero:before {
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   left: 2%;
   content: url("../../img/intro/leaf3.png");
 }
 .hero:after {
   content: url("../../img/intro/berriesandleafs.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   right: 0;
 }
 
 .hero__container {
   /*  background: url("../../img/intro/chocobars.png") right center /50% auto no-repeat; */
-  padding: 24px 0 45px;
+  padding: 1.3333333333rem 0 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,7 +132,7 @@ h2 {
 
 .logo {
   display: block;
-  margin-right: 44px;
+  margin-right: 2.4444444444rem;
 }
 
 .header__column {
@@ -141,7 +146,7 @@ h2 {
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.5rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -152,16 +157,16 @@ h2 {
 }
 
 .contacts__phone {
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .contacts__img {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
 }
 
 .hero__intro {
@@ -174,15 +179,15 @@ h2 {
 }
 
 .hero__content > h1 {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .hero__content > p {
-  font-size: 21px;
-  margin-bottom: 30px;
+  font-size: 1.1666666667rem;
+  margin-bottom: 1.6666666667rem;
 }
 
 .hero__content-img {
@@ -194,7 +199,7 @@ h2 {
 }
 
 .row__item {
-  margin-right: 38px;
+  margin-right: 2.1111111111rem;
 }
 .row__item:last-child {
   margin-right: 0;
@@ -205,22 +210,22 @@ h2 {
 }
 
 .row__pic {
-  width: 45px;
-  margin-right: 6px;
+  width: 2.5rem;
+  margin-right: 0.3333333333rem;
 }
 
 .row__text > p {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: 0.8888888889rem;
+  max-width: 4.7222222222rem;
 }
 
 .btn {
-  font-size: 19px;
+  font-size: 1.0555555556rem;
   font-weight: bold;
-  padding: 18px 37px;
+  padding: 1rem 2.0555555556rem;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: 5.5555555556rem;
   line-height: 1;
   display: inline-block;
   border: none;
@@ -252,7 +257,7 @@ h2 {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,18 +276,18 @@ h2 {
 .why-chocco:before {
   content: url("../../img/WhyChocco/berry.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -4.4444444444rem;
   left: 0;
 }
 
 .why-chocco__preview {
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
 }
 
 .why-chocco__preview > h2 {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: 0.1111111111rem;
   color: #000;
   text-transform: uppercase;
 }
@@ -305,7 +310,7 @@ h2 {
 .benefits__item:before {
   content: url("../../img/WhyChocco/points.png");
   position: absolute;
-  top: 30px;
+  top: 1.6666666667rem;
   right: 0;
   transform: translate(50%);
 }
@@ -325,8 +330,8 @@ h2 {
 
 .benefit__img-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
@@ -334,8 +339,8 @@ h2 {
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -343,13 +348,13 @@ h2 {
 }
 
 .benefit__img {
-  margin-bottom: 30px;
+  margin-bottom: 1.6666666667rem;
 }
 
 .benefit__text > h3 {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 0.8333333333rem;
   color: #000;
 }
 
@@ -373,21 +378,21 @@ h2 {
 .reviews__display {
   display: flex;
   background: #f8faf9;
-  padding: 50px 47px 50px;
+  padding: 2.7777777778rem 2.6111111111rem 2.7777777778rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: -65px;
+  top: -3.6111111111rem;
 }
 .reviews__display:after {
   content: url("../../img/reviews/branch.png");
@@ -404,8 +409,8 @@ h2 {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.1111111111rem;
+  height: 14.4444444444rem;
 }
 
 .reviews__avatar-img {
@@ -416,23 +421,23 @@ h2 {
 
 .reviews__article {
   flex: 1;
-  margin-left: 16px;
+  margin-left: 0.8888888889rem;
 }
 
 .reviews__article > h3 {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   font-weight: bold;
   color: #000;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .article__text {
-  margin-bottom: 15px;
-  padding-right: 131px;
+  margin-bottom: 0.8333333333rem;
+  padding-right: 7.2777777778rem;
 }
 
 .article__author > p {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: #000;
 }
@@ -443,9 +448,9 @@ h2 {
 }
 
 .switcher-avatar {
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border: 0.3333333333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -478,7 +483,7 @@ h2 {
   background: url("../../img/form/pattern.jpg") center no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   position: relative;
 }
 .delivery:before {
@@ -494,7 +499,7 @@ h2 {
 
 .form__column {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__column:last-child {
   margin-right: 0;
@@ -502,12 +507,12 @@ h2 {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -516,11 +521,11 @@ h2 {
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 11px;
-  border: solid 3px transparent;
+  padding: 1rem 0.6111111111rem;
+  border: solid 0.1666666667rem transparent;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 .form__input:focus {
@@ -540,7 +545,7 @@ h2 {
           user-select: none;
 }
 .radio--checkbox {
-  margin-bottom: 37px;
+  margin-bottom: 2.0555555556rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -557,16 +562,16 @@ h2 {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   background: #365a49;
   border-radius: 50%;
   display: none;
@@ -577,15 +582,15 @@ h2 {
 }
 
 .form__radio {
-  margin-right: 40px;
-  margin-bottom: 15px;
+  margin-right: 2.2222222222rem;
+  margin-bottom: 0.8333333333rem;
 }
 .form__radio:last-child {
   margin-right: 0;
 }
 
 .radio__title {
-  margin-left: 9px;
+  margin-left: 0.5rem;
 }
 
 .fixed-menu {
@@ -596,25 +601,25 @@ h2 {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #365a49;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #365a49;
   position: absolute;

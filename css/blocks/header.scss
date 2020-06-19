@@ -6,7 +6,7 @@
 
 .logo {
   display: block;
-  margin-right: 44px;
+  margin-right: rem(44px);
 }
 
 .header__column {
@@ -20,7 +20,7 @@
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: rem(27px);
 
   &:last-child {
     margin-right: 0;
@@ -32,14 +32,14 @@
 }
 
 .contacts__phone {
-  font-size: 24px;
+  font-size: rem(24px);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .contacts__img {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
 }

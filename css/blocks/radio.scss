@@ -4,7 +4,7 @@
   user-select: none;
 
   &--checkbox {
-    margin-bottom: 37px;
+    margin-bottom: rem(37px);
 
     .radio__visible {
       border-radius: 0;
@@ -27,16 +27,16 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
 
   &:before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: #365a49;
     border-radius: 50%;
     display: none;
@@ -48,8 +48,8 @@
 }
 
 .form__radio {
-  margin-right: 40px;
-  margin-bottom: 15px;
+  margin-right: rem(40px);
+  margin-bottom: rem(15px);
 
   &:last-child{
     margin-right: 0;
@@ -57,5 +57,5 @@
 }
 
 .radio__title {
-  margin-left: 9px;
+  margin-left: rem(9px);
 }

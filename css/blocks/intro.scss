@@ -8,15 +8,15 @@
 }
 
 .hero__content > h1 {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .hero__content > p {
-  font-size: 21px;
-  margin-bottom: 30px; 
+  font-size: rem(21px);
+  margin-bottom: rem(30px); 
 }
 
 .hero__content-img {

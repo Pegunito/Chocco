@@ -21,21 +21,21 @@
 .reviews__display {
   display: flex;
   background: #f8faf9;
-  padding: 50px 47px 50px;
+  padding: rem(50px) rem(47px) rem(50px);
   overflow: hidden;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 
   &:after {
@@ -56,8 +56,8 @@
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
 }
 
 .reviews__avatar-img {
@@ -68,23 +68,23 @@
 
 .reviews__article {
   flex: 1;
-  margin-left: 16px;
+  margin-left: rem(16px);
 }
 
 .reviews__article > h3 {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
   color: #000;
-  margin-bottom: 18px; 
+  margin-bottom: rem(18px); 
 }
 
 .article__text {
-  margin-bottom: 15px;
-  padding-right: 131px;
+  margin-bottom: rem(15px);
+  padding-right: rem(131px);
 }
 
 .article__author > p {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: #000;
 }
