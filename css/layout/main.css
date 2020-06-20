@@ -824,6 +824,12 @@ h2 {
   display: flex;
   align-items: center;
 }
+.contacts__phone--footer {
+  font-size: 1.1666666667rem;
+  font-weight: 400;
+  line-height: 1.6666666667rem;
+  color: #365a49;
+}
 @media screen and (max-width: 768px) {
   .contacts__phone {
     display: none;
@@ -838,4 +844,27 @@ h2 {
 
 .contacts__phone {
   white-space: nowrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3888888889rem 0;
+  padding-left: 5.0555555556rem;
+}
+
+.footer__column > p {
+  font-size: 1.1666666667rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.3233333333rem;
+}
+
+.map__block {
+  width: 100%;
 }

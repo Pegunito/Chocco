@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  padding: rem(25px) 0;
+  padding-left: rem(91px);
+  
+}
+
+.footer__column > p {
+  font-size: rem(21px);
+  font-weight: 400;
+  color: #000;
+  line-height: rem(23.82px);
+}
+
+.map__block {
+  width: 100%;
+}
