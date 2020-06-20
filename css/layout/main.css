@@ -20,6 +20,16 @@
 html {
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 body, html {
   height: 100%;
@@ -102,6 +112,16 @@ h2 {
   color: #fff;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: right bottom 88%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero:before, .hero:after {
+    display: none;
+  }
+}
 .hero:before {
   position: absolute;
   bottom: -2.2222222222rem;
@@ -140,6 +160,12 @@ h2 {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -162,6 +188,11 @@ h2 {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .contacts__phone {
+    display: none;
+  }
+}
 
 .contacts__img {
   width: 0.6666666667rem;
@@ -173,9 +204,26 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .hero__intro {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+  }
+}
 
 .hero__content {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .hero__content {
+    width: 100%;
+    order: 2;
+  }
 }
 
 .hero__content > h1 {
@@ -189,9 +237,26 @@ h2 {
   font-size: 1.1666666667rem;
   margin-bottom: 1.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .hero__content > p {
+    padding: 0 25%;
+  }
+}
 
 .hero__content-img {
   width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .hero__content-img {
+    display: flex;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__row {
+    display: none;
+  }
 }
 
 .row__list {

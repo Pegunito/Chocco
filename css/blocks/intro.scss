@@ -1,10 +1,25 @@
 .hero__intro {
  display: flex;
  justify-content: space-between;
+
+ @include tablets {
+   width: 100%;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+  }
 }
 
 .hero__content {
   width: 40%;
+
+  @include tablets {
+    width: 100%;
+    order: 2;
+  }
 }
 
 .hero__content > h1 {
@@ -15,10 +30,20 @@
 }
 
 .hero__content > p {
+
   font-size: rem(21px);
   margin-bottom: rem(30px); 
+
+  @include tablets {
+    padding: 0 25%;
+  }
 }
 
 .hero__content-img {
   width: 45%;
+
+  @include tablets {
+    display: flex;
+    order: 1;
+  }
 }

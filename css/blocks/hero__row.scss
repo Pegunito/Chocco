@@ -1,3 +1,9 @@
+.hero__row {
+  @include tablets {
+    display: none;
+  }
+}
+
 .row__list {
   display: flex;
 }

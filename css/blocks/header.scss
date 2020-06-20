@@ -14,6 +14,15 @@
   align-items: center;
 }
 
+
+//menu
+
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -31,11 +40,17 @@
   text-decoration: none;
 }
 
+//contacts
+
 .contacts__phone {
   font-size: rem(24px);
   text-decoration: none;
   display: flex;
   align-items: center;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .contacts__img {
