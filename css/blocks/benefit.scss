@@ -1,5 +1,10 @@
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__img-wrapper {
@@ -24,6 +29,11 @@ transform: translate(-50%, -50%);
 
 .benefit__img {
   margin-bottom: rem(30px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
 .benefit__text > h3 {

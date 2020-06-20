@@ -1,60 +1,14 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .logo {
   display: block;
-  margin-right: rem(44px);
 }
 
 .header__column {
   display: flex;
   align-items: center;
-}
-
-
-//menu
-
-.menu {
-  @include tablets {
-    display: none;
-  }
-}
-
-.menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  margin-right: rem(27px);
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.menu__link {
-  text-decoration: none;
-}
-
-//contacts
-
-.contacts__phone {
-  font-size: rem(24px);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-
-  @include tablets {
-    display: none;
-  }
-}
-
-.contacts__img {
-  width: rem(12px);
-  height: rem(12px);
-  margin-right: rem(6px);
 }

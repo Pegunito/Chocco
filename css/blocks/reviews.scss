@@ -15,6 +15,9 @@
     top: 10%;
     right: 0;
 
+    @include phones {
+      top: 0;
+    }
   }
 }
 
@@ -52,12 +55,23 @@
 
   &--active {
     display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
 }
 
 .reviews__avatar {
   width: rem(254px);
   height: rem(260px);
+
+  @include tablets {
+    width: 130px;
+    height: 132px;
+  }
 }
 
 .reviews__avatar-img {
@@ -69,6 +83,10 @@
 .reviews__article {
   flex: 1;
   margin-left: rem(16px);
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .reviews__article > h3 {
@@ -81,6 +99,10 @@
 .article__text {
   margin-bottom: rem(15px);
   padding-right: rem(131px);
+
+  @include tablets {
+    padding-right: 0;
+  }
 }
 
 .article__author > p {

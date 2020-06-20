@@ -37,6 +37,10 @@
   @include tablets {
     padding: 0 25%;
   }
+
+  @include phones {
+    padding: 0 16%;
+  }
 }
 
 .hero__content-img {
