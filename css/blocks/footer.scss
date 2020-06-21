@@ -19,5 +19,10 @@
 }
 
 .map__block {
+  position: relative;
   width: 100%;
+}
+
+.map__img {
+  min-width: 100%;
 }

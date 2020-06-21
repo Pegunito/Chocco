@@ -1,8 +1,9 @@
 .hero__intro {
- display: flex;
- justify-content: space-between;
+  position: relative;
 
  @include tablets {
+   display: flex;
+   flex-direction: column;
    width: 100%;
    flex: 1;
    flex-direction: column;
@@ -10,6 +11,10 @@
    align-items: center;
    text-align: center;
    background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+  }
+
+  @include phones {
+    background-position: center top 15%;
   }
 }
 
@@ -44,10 +49,20 @@
 }
 
 .hero__content-img {
-  width: 45%;
+position: absolute;
+bottom: -22%;
+left: 46%;
 
   @include tablets {
+    position: static;
     display: flex;
     order: 1;
+    width: 46%;
+
+  }
+
+  @include phones {
+    width: 50%;
+    padding-bottom: 5%;
   }
 }

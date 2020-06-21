@@ -160,11 +160,12 @@ h2 {
 }
 
 .hero__intro {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero__intro {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     flex: 1;
     flex-direction: column;
@@ -172,6 +173,11 @@ h2 {
     align-items: center;
     text-align: center;
     background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__intro {
+    background-position: center top 15%;
   }
 }
 
@@ -208,12 +214,22 @@ h2 {
 }
 
 .hero__content-img {
-  width: 45%;
+  position: absolute;
+  bottom: -22%;
+  left: 46%;
 }
 @media screen and (max-width: 768px) {
   .hero__content-img {
+    position: static;
     display: flex;
     order: 1;
+    width: 46%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__content-img {
+    width: 50%;
+    padding-bottom: 5%;
   }
 }
 
@@ -453,7 +469,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .reviews:after {
-    top: 0;
+    top: -3%;
   }
 }
 
@@ -866,5 +882,10 @@ h2 {
 }
 
 .map__block {
+  position: relative;
   width: 100%;
+}
+
+.map__img {
+  min-width: 100%;
 }
