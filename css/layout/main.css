@@ -172,7 +172,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+    background: url(../../img/intro/Phones_leafs_berries.png) center top 39% no-repeat;
   }
 }
 @media screen and (max-width: 480px) {
@@ -223,7 +223,8 @@ h2 {
     position: static;
     display: flex;
     order: 1;
-    width: 46%;
+    width: 54%;
+    padding-bottom: 5%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -313,6 +314,11 @@ h2 {
 .section--font-color--green h2 {
   color: inherit;
 }
+@media screen and (max-width: 768px) {
+  .section--font-color--green h2 {
+    margin-bottom: 3%;
+  }
+}
 
 .why-chocco {
   position: relative;
@@ -334,6 +340,11 @@ h2 {
   bottom: -4.4444444444rem;
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  .why-chocco:before {
+    bottom: -3.3333333333rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .why-chocco:before {
     display: none;
@@ -342,6 +353,11 @@ h2 {
 
 .why-chocco__preview {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .why-chocco__preview {
+    margin-bottom: 2.9444444444rem;
+  }
 }
 
 .why-chocco__preview > h2 {
@@ -356,6 +372,11 @@ h2 {
   color: #666666;
   text-align: center;
   padding: 0 26%;
+}
+@media screen and (max-width: 768px) {
+  .why-chocco__preview > p {
+    padding: 0 19%;
+  }
 }
 @media screen and (max-width: 480px) {
   .why-chocco__preview > p {
@@ -437,6 +458,11 @@ h2 {
 .benefit__img {
   margin-bottom: 1.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .benefit__img {
+    margin-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .benefit__img {
     margin-bottom: 0;
@@ -449,6 +475,11 @@ h2 {
   font-weight: bold;
   margin-bottom: 0.8333333333rem;
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .benefit__text > h3 {
+    margin-bottom: 0.2222222222rem;
+  }
 }
 
 .reviews {
@@ -479,6 +510,11 @@ h2 {
   padding: 2.7777777778rem 2.6111111111rem 2.7777777778rem;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .reviews__display {
+    padding: 50px 47px 30px;
+  }
 }
 .reviews__display:before {
   content: "";
@@ -546,6 +582,17 @@ h2 {
   color: #000;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__article > h3 {
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__inner {
+    margin-bottom: 5%;
+  }
+}
 
 .article__text {
   margin-bottom: 0.8333333333rem;
@@ -554,6 +601,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .article__text {
     padding-right: 0;
+    margin-bottom: 5%;
   }
 }
 
@@ -620,7 +668,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
-    padding: 0 19%;
+    padding: 0 18%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -639,12 +687,18 @@ h2 {
 @media screen and (max-width: 768px) {
   .form__column {
     margin-right: 0;
+    padding-left: 4%;
   }
 }
 
 .form__row {
   display: flex;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .form__row {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
@@ -661,9 +715,19 @@ h2 {
   padding: 1rem 0.6111111111rem;
   border: solid 0.1666666667rem transparent;
 }
+@media screen and (max-width: 768px) {
+  .form__input {
+    height: 50%;
+  }
+}
 .form__input--textarea {
   height: 10rem;
   resize: none;
+}
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 75%;
+  }
 }
 .form__input:focus {
   border-color: #dee2bd;
@@ -684,6 +748,11 @@ h2 {
   .form__btns {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__btns {
+    padding-left: 12%;
   }
 }
 
@@ -840,6 +909,12 @@ h2 {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .contacts__phone {
+    display: none;
+  }
+}
+
 .contacts__phone--footer {
   font-size: 1.1666666667rem;
   font-weight: 400;
@@ -847,8 +922,8 @@ h2 {
   color: #365a49;
 }
 @media screen and (max-width: 768px) {
-  .contacts__phone {
-    display: none;
+  .contacts__phone--footer {
+    display: flex;
   }
 }
 

@@ -30,6 +30,10 @@ transform: translate(-50%, -50%);
 .benefit__img {
   margin-bottom: rem(30px);
 
+  @include tablets {
+    margin-bottom: rem(18px);
+  }
+
   @include phones {
     margin-bottom: 0;
     margin-right: rem(20px);
@@ -41,4 +45,8 @@ transform: translate(-50%, -50%);
   font-weight: bold;
   margin-bottom: rem(15px);
   color: #000;
+
+  @include tablets {
+    margin-bottom: rem(4px);
+  }
 }

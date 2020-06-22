@@ -4,15 +4,20 @@
   display: flex;
   align-items: center;
 
-  &--footer {
-    font-size: rem(21px);
-    font-weight: 400;
-    line-height: rem(30px);
-    color: #365a49;
-  }
-
+  
   @include tablets {
     display: none;
+  }
+}
+
+.contacts__phone--footer {
+font-size: rem(21px);
+font-weight: 400;
+line-height: rem(30px);
+color: #365a49;
+
+@include tablets {
+  display: flex;
   }
 }
 

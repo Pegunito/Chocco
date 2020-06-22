@@ -16,6 +16,10 @@
     bottom: rem(-80px);
     left: 0;
 
+    @include tablets {
+      bottom: rem(-60px);
+    }
+
     @include phones {
       display: none;
     }
@@ -24,6 +28,10 @@
 
 .why-chocco__preview {
   margin-bottom: rem(36px);
+
+  @include tablets {
+    margin-bottom: rem(53px);
+  }
 }
 
 .why-chocco__preview > h2 {
@@ -38,6 +46,10 @@
   color: #666666;
   text-align: center;
   padding: 0 26%;
+
+  @include tablets {
+    padding: 0 19%;
+  }
 
   @include phones {
     padding: 0 4%;

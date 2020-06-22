@@ -10,7 +10,7 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   background: url(../../img/intro/Phones_leafs_berries.png) center top 30% no-repeat;
+   background: url(../../img/intro/Phones_leafs_berries.png) center top 39% no-repeat;
   }
 
   @include phones {
@@ -57,7 +57,8 @@ left: 46%;
     position: static;
     display: flex;
     order: 1;
-    width: 46%;
+    width: 54%;
+    padding-bottom: 5%;
 
   }
 
