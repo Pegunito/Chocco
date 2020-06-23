@@ -9,6 +9,10 @@
   display: inline-block;
   border: none;
 
+  @include phones {
+    padding: 19px 42px;
+  }
+
   &--theme--white {
     background: #fff;
     color: $darkGreen;

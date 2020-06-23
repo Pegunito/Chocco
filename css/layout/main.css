@@ -117,6 +117,12 @@ h2 {
     background-position: right bottom 120%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    background-size: auto 50%;
+    background-position: right bottom 83%;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero:before, .hero:after {
     display: none;
@@ -177,7 +183,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .hero__intro {
-    background-position: center top 15%;
+    background-position: center top 25%;
   }
 }
 
@@ -197,6 +203,11 @@ h2 {
   line-height: 1.2;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .hero__content > h1 {
+    line-height: 0.9;
+  }
+}
 
 .hero__content > p {
   font-size: 1.1666666667rem;
@@ -209,7 +220,9 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .hero__content > p {
-    padding: 0 16%;
+    padding: 0% 16%;
+    padding-bottom: 3%;
+    margin-bottom: 0;
   }
 }
 
@@ -229,7 +242,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .hero__content-img {
-    width: 50%;
+    width: 65%;
     padding-bottom: 5%;
   }
 }
@@ -275,6 +288,11 @@ h2 {
   line-height: 1;
   display: inline-block;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: 19px 42px;
+  }
 }
 .btn--theme--white {
   background: #fff;
@@ -356,7 +374,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .why-chocco__preview {
-    margin-bottom: 2.9444444444rem;
+    margin-bottom: 53px;
   }
 }
 
@@ -401,7 +419,7 @@ h2 {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 1.0555555556rem;
+    margin-bottom: 45px;
   }
 }
 .benefits__item:before {

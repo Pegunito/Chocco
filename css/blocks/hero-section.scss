@@ -10,6 +10,11 @@
     background-position: right bottom 120%;
   }
 
+  @include phones {
+    background-size: auto 50%;
+    background-position: right bottom 83%;
+  }
+
   &:before, &:after {
     @include tablets {
       display: none;
