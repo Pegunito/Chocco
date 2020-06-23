@@ -1,13 +1,12 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  padding: rem(25px) rem(85px);
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  padding: rem(25px) 0;
-  padding-left: rem(91px);
   
 }
 

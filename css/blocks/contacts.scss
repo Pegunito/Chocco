@@ -3,7 +3,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-
   
   @include tablets {
     display: none;
@@ -25,6 +24,15 @@ color: #365a49;
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
+  fill: #fff;
+
+  &--theme-black {
+    fill: #000;
+  }
+
+  &:hover {
+    fill: $darkGreen;
+  }
 }
 
 .contacts__phone {

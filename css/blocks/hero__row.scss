@@ -25,6 +25,16 @@
   margin-right: rem(6px);
 }
 
+.row__img {
+  width: 41px;
+  height: 40px;
+  fill: #b9ecf7;
+
+  &:hover {
+    fill: $darkGreen;
+  }
+}
+
 .row__text > p {
   font-size: rem(16px);
   max-width: rem(85px);

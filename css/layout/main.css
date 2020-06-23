@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 h6 {
 
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 * {
@@ -114,7 +115,8 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: right bottom 120%;
+    background-size: auto 60%;
+    background-position: right bottom 80%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -271,6 +273,15 @@ h2 {
 .row__pic {
   width: 2.5rem;
   margin-right: 0.3333333333rem;
+}
+
+.row__img {
+  width: 41px;
+  height: 40px;
+  fill: #b9ecf7;
+}
+.row__img:hover {
+  fill: #0b4d3c;
 }
 
 .row__text > p {
@@ -949,6 +960,13 @@ h2 {
   width: 0.6666666667rem;
   height: 0.6666666667rem;
   margin-right: 0.3333333333rem;
+  fill: #fff;
+}
+.contacts__img--theme-black {
+  fill: #000;
+}
+.contacts__img:hover {
+  fill: #0b4d3c;
 }
 
 .contacts__phone {
@@ -958,13 +976,12 @@ h2 {
 .footer {
   display: flex;
   justify-content: space-between;
+  padding: 1.3888888889rem 4.7222222222rem;
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  padding: 1.3888888889rem 0;
-  padding-left: 5.0555555556rem;
 }
 
 .footer__column > p {
@@ -981,4 +998,28 @@ h2 {
 
 .map__img {
   min-width: 100%;
+}
+
+.social__img {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #b2b2b2;
+}
+.social__img:hover {
+  fill: #000000;
+}
+.social__img--hover {
+  fill: #000000;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 1.1111111111rem;
+}
+.social__item:last-child {
+  margin-right: 0;
 }
