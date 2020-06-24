@@ -10,5 +10,9 @@
     position: absolute;
     top: -15%;
     left: 0;
+
+    @include phones {
+      top: -10%;
+    }
   }
 }

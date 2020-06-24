@@ -10,10 +10,13 @@
 
     h2 {
       color: inherit;
-
-      @include tablets {
-        margin-bottom: 3%;
-      }
     }
+  }
+  @include tablets {
+    min-height: 0;
+  }
+
+  @include phones {
+    min-height: 0;
   }
 }

@@ -7,13 +7,11 @@
   position: relative;
 
   @include tablets {
-    min-height: 0;
     background-size: auto 60%;
     background-position: right bottom 80%;
   }
 
   @include phones {
-    min-height: 0;
     background-size: auto 50%;
     background-position: right bottom 83%;
   }

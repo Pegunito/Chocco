@@ -27,7 +27,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -115,14 +115,12 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 0;
     background-size: auto 60%;
     background-position: right bottom 80%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    min-height: 0;
     background-size: auto 50%;
     background-position: right bottom 83%;
   }
@@ -346,8 +344,13 @@ h2 {
   color: inherit;
 }
 @media screen and (max-width: 768px) {
-  .section--font-color--green h2 {
-    margin-bottom: 3%;
+  .section {
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 0;
   }
 }
 
@@ -516,12 +519,6 @@ h2 {
 .reviews {
   position: relative;
   background: url("../../img/reviews/pattern.png") left bottom -30% no-repeat;
-  /*   &:before {
-      content: url("../../img/reviews/berries.png");
-      position: absolute;
-      bottom: -10%;
-      left: 0;
-    } */
 }
 .reviews:after {
   content: url("../../img/reviews/berry.png");
@@ -531,7 +528,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   .reviews:after {
-    top: -3%;
+    top: -10%;
   }
 }
 
@@ -697,6 +694,11 @@ h2 {
   top: -15%;
   left: 0;
 }
+@media screen and (max-width: 480px) {
+  .delivery:before {
+    top: -10%;
+  }
+}
 
 .form {
   display: flex;
@@ -723,7 +725,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .form__column {
     margin-right: 0;
-    padding-left: 4%;
+    padding: 0 2%;
   }
 }
 
@@ -788,7 +790,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .form__btns {
-    padding-left: 12%;
+    padding-left: 5%;
   }
 }
 
@@ -930,10 +932,24 @@ h2 {
   margin-top: 10px;
   margin-right: 1.5rem;
 }
+.menu__item:hover {
+  animation: bounce 1s;
+}
 .menu__item:last-child {
   margin-right: 0;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .menu__link {
   white-space: nowrap;
   text-decoration: none;
@@ -1012,10 +1028,13 @@ h2 {
 .map__block {
   position: relative;
   width: 100%;
+  overflow: hidden;
+  height: inherit;
 }
 
 .map__img {
   min-width: 100%;
+  height: 100%;
 }
 
 .social__img {
@@ -1024,9 +1043,6 @@ h2 {
   fill: #b2b2b2;
 }
 .social__img:hover {
-  fill: #000000;
-}
-.social__img--hover {
   fill: #000000;
 }
 

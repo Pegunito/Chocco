@@ -2,13 +2,6 @@
   position: relative;
   background: url("../../img/reviews/pattern.png") left bottom -30%no-repeat;
 
-/*   &:before {
-    content: url("../../img/reviews/berries.png");
-    position: absolute;
-    bottom: -10%;
-    left: 0;
-  } */
-
   &:after {
     content: url("../../img/reviews/berry.png");
     position: absolute;
@@ -16,7 +9,7 @@
     right: 0;
 
     @include phones {
-      top: -3%;
+      top: -10%;
     }
   }
 }
