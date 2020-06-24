@@ -27,7 +27,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -115,12 +115,14 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .hero {
+    min-height: 0;
     background-size: auto 60%;
     background-position: right bottom 80%;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
+    min-height: 0;
     background-size: auto 50%;
     background-position: right bottom 83%;
   }
@@ -385,7 +387,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .why-chocco__preview {
-    margin-bottom: 53px;
+    margin-bottom: 14%;
   }
 }
 
@@ -430,7 +432,7 @@ h2 {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 12%;
   }
 }
 .benefits__item:before {
@@ -562,6 +564,11 @@ h2 {
   position: absolute;
   top: 2%;
   right: 0;
+}
+@media screen and (max-width: 480px) {
+  .reviews__display:after {
+    width: 27%;
+  }
 }
 
 .reviews__item {
@@ -978,10 +985,21 @@ h2 {
   justify-content: space-between;
   padding: 1.3888888889rem 4.7222222222rem;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .footer__column {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .footer__column {
+    align-items: center;
+  }
 }
 
 .footer__column > p {

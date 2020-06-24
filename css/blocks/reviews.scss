@@ -51,6 +51,9 @@
     top: 2%;
     right: 0;
 
+    @include phones {
+      width: 27%;
+    }
   }
 }
 

@@ -2,12 +2,20 @@
   display: flex;
   justify-content: space-between;
   padding: rem(25px) rem(85px);
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
   
+  @include phones {
+    align-items: center;
+  }
 }
 
 .footer__column > p {
