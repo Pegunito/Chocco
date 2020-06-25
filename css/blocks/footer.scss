@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: rem(25px) rem(85px);
+  padding: rem(25px) rem(10px);
 
   @include phones {
     flex-direction: column;
@@ -29,6 +29,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: inherit;
 }
 
 .map__img {

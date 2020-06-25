@@ -88,11 +88,6 @@ button {
   max-width: 940px;
   margin: 0 auto;
 }
-.container--map {
-  height: inherit;
-  width: 100%;
-  max-width: inherit;
-}
 
 .wrapper {
   position: relative;
@@ -1004,7 +999,7 @@ h2 {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 1.3888888889rem 4.7222222222rem;
+  padding: 1.3888888889rem 0.5555555556rem;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1034,6 +1029,7 @@ h2 {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: inherit;
 }
 
 .map__img {
