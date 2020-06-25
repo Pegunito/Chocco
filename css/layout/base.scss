@@ -66,6 +66,12 @@ button {
   width: 95%;
   max-width: $containerWidth;
   margin: 0 auto;
+
+  &--map {
+    height: inherit;
+    width: 100%;
+    max-width: inherit;
+  }
 }
 
 .wrapper {
