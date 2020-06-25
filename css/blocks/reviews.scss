@@ -2,40 +2,40 @@
   position: relative;
   background: url("../../img/reviews/pattern.png") left bottom -30%no-repeat;
 
-/*   &:before {
-    content: url("../../img/reviews/berries.png");
-    position: absolute;
-    bottom: -10%;
-    left: 0;
-  } */
-
   &:after {
     content: url("../../img/reviews/berry.png");
     position: absolute;
     top: 10%;
     right: 0;
 
+    @include phones {
+      top: -10%;
+    }
   }
 }
 
 .reviews__display {
   display: flex;
   background: #f8faf9;
-  padding: 50px 47px 50px;
+  padding: rem(50px) rem(47px) rem(50px);
   overflow: hidden;
   position: relative;
+
+  @include tablets {
+    padding: 50px 47px 30px;
+  }
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 
   &:after {
@@ -44,6 +44,9 @@
     top: 2%;
     right: 0;
 
+    @include phones {
+      width: 27%;
+    }
   }
 }
 
@@ -52,12 +55,23 @@
 
   &--active {
     display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: 130px;
+    height: 132px;
+  }
 }
 
 .reviews__avatar-img {
@@ -68,23 +82,44 @@
 
 .reviews__article {
   flex: 1;
-  margin-left: 16px;
+  margin-left: rem(16px);
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .reviews__article > h3 {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
   color: #000;
-  margin-bottom: 18px; 
+  margin-bottom: rem(18px); 
+
+  @include tablets {
+    margin-bottom: 2%;
+  }
+}
+
+.reviews__inner {
+  
+  @include tablets {
+    margin-bottom: 5%;
+  }
 }
 
 .article__text {
-  margin-bottom: 15px;
-  padding-right: 131px;
+  margin-bottom: rem(15px);
+  padding-right: rem(131px);
+
+  @include tablets {
+    padding-right: 0;
+    margin-bottom: 5%;
+  }
 }
 
 .article__author > p {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: #000;
 }
+

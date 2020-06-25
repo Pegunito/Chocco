@@ -2,22 +2,42 @@
   position: relative;
   background: url(../../img/WhyChocco/leaf.png) left top 40% no-repeat;
 
+  @include tablets {
+    background-position: left top 5%;
+  }
+
+  @include phones {
+    background: none;
+  }
+
   &:before {
     content: url("../../img/WhyChocco/berry.png");
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
+
+    @include tablets {
+      bottom: rem(-60px);
+    }
+
+    @include phones {
+      display: none;
+    }
   }
 }
 
 .why-chocco__preview {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
+
+  @include tablets {
+    margin-bottom: 14%;
+  }
 }
 
 .why-chocco__preview > h2 {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: rem(2px);
   color: #000;
   text-transform: uppercase;
 }
@@ -26,4 +46,12 @@
   color: #666666;
   text-align: center;
   padding: 0 26%;
+
+  @include tablets {
+    padding: 0 19%;
+  }
+
+  @include phones {
+    padding: 0 4%;
+  }
 }

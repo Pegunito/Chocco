@@ -1,24 +1,75 @@
 .hero__intro {
- display: flex;
- justify-content: space-between;
+  position: relative;
+
+ @include tablets {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background: url(../../img/intro/Phones_leafs_berries.png) center top 39% no-repeat;
+  }
+
+  @include phones {
+    background-position: center top 25%;
+  }
 }
 
 .hero__content {
   width: 40%;
+
+  @include tablets {
+    width: 100%;
+    order: 2;
+  }
 }
 
 .hero__content > h1 {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
+
+  @include phones {
+    line-height: 0.9;
+  }
 }
 
 .hero__content > p {
-  font-size: 21px;
-  margin-bottom: 30px; 
+
+  font-size: rem(21px);
+  margin-bottom: rem(30px); 
+
+  @include tablets {
+    padding: 0 25%;
+  }
+
+  @include phones {
+    padding: 0% 16%;
+    padding-bottom: 3%;
+    margin-bottom: 0;
+  }
 }
 
 .hero__content-img {
-  width: 45%;
+position: absolute;
+bottom: -22%;
+left: 46%;
+
+  @include tablets {
+    position: static;
+    display: flex;
+    order: 1;
+    width: 54%;
+    padding-bottom: 5%;
+
+  }
+
+  @include phones {
+    width: 65%;
+    padding-bottom: 5%;
+  }
 }

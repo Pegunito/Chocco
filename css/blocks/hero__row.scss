@@ -1,9 +1,15 @@
+.hero__row {
+  @include tablets {
+    display: none;
+  }
+}
+
 .row__list {
   display: flex;
 }
 
 .row__item {
-  margin-right: 38px;
+  margin-right: rem(38px);
 
   &:last-child {
     margin-right: 0;
@@ -15,11 +21,21 @@
 }
 
 .row__pic {
-  width: 45px;
-  margin-right: 6px;
+  width: rem(45px);
+  margin-right: rem(6px);
+}
+
+.row__img {
+  width: 41px;
+  height: 40px;
+  fill: #b9ecf7;
+
+  &:hover {
+    fill: $darkGreen;
+  }
 }
 
 .row__text > p {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: rem(16px);
+  max-width: rem(85px);
 }

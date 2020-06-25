@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(25px) rem(10px);
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  
+  @include phones {
+    align-items: center;
+  }
+}
+
+.footer__column > p {
+  font-size: rem(21px);
+  font-weight: 400;
+  color: #000;
+  line-height: rem(23.82px);
+}
+
+.map__block {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: inherit;
+}
+
+.map__img {
+  min-width: 100%;
+  height:100%;
+}

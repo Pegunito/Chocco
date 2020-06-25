@@ -1,14 +1,30 @@
 .hero {
-  background: url("../../img/intro/patern.png") right bottom no-repeat;;
+  background: url("../../img/intro/patern.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: #fff;
   position: relative;
 
+  @include tablets {
+    background-size: auto 60%;
+    background-position: right bottom 80%;
+  }
+
+  @include phones {
+    background-size: auto 50%;
+    background-position: right bottom 83%;
+  }
+
+  &:before, &:after {
+    @include tablets {
+      display: none;
+    }
+  }
+
   &:before {
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
     content: url("../../img/intro/leaf3.png");
   }
@@ -16,7 +32,7 @@
   &:after {
     content: url("../../img/intro/berriesandleafs.png");
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
 
   }
@@ -24,7 +40,7 @@
 
 .hero__container {
  /*  background: url("../../img/intro/chocobars.png") right center /50% auto no-repeat; */
-  padding: 24px 0 45px;
+  padding: rem(24px) 0 rem(45px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

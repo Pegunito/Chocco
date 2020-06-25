@@ -1,0 +1,45 @@
+.menu {
+  margin: 0 30px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item {
+  margin-top: 10px;
+  margin-right: rem(27px);
+  
+  &:hover {
+    animation: bounce 1s;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.menu__link {
+  white-space: nowrap;
+  text-decoration: none;
+}

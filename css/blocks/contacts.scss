@@ -1,0 +1,40 @@
+.contacts__phone {
+  font-size: rem(24px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  
+  @include tablets {
+    display: none;
+  }
+}
+
+.contacts__phone--footer {
+font-size: rem(21px);
+font-weight: 400;
+line-height: rem(30px);
+color: #365a49;
+
+@include tablets {
+  display: flex;
+  }
+}
+
+.contacts__img {
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
+  fill: #fff;
+
+  &--theme-black {
+    fill: #000;
+  }
+
+  &:hover {
+    fill: $darkGreen;
+  }
+}
+
+.contacts__phone {
+  white-space: nowrap;
+}

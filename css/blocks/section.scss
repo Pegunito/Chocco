@@ -1,6 +1,6 @@
 .section  {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,5 +11,12 @@
     h2 {
       color: inherit;
     }
+  }
+  @include tablets {
+    min-height: 0;
+  }
+
+  @include phones {
+    min-height: 0;
   }
 }
