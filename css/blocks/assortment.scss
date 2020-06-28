@@ -1,0 +1,35 @@
+.assortment__switcher {
+  display: flex;
+}
+
+.assortment__item {
+  display: flex;
+}
+
+.assortment__img {
+  width: 50%;
+}
+
+.assortment__description {
+  flex: 1;
+}
+
+.product__description {
+  column-count: 2;
+  column-gap: 10%;
+}
+
+.product__paragraph {
+  margin-bottom: rem(47px);
+}
+
+
+.desc__pic {
+  width: rem(50px);
+  height: rem(50px);
+  margin-bottom: rem(37px);
+}
+
+.desc__title {
+  margin-bottom: rem(22px);
+}

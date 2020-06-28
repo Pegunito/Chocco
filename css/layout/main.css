@@ -1057,3 +1057,38 @@ h2 {
 .social__item:last-child {
   margin-right: 0;
 }
+
+.assortment__switcher {
+  display: flex;
+}
+
+.assortment__item {
+  display: flex;
+}
+
+.assortment__img {
+  width: 50%;
+}
+
+.assortment__description {
+  flex: 1;
+}
+
+.product__description {
+  column-count: 2;
+  column-gap: 10%;
+}
+
+.product__paragraph {
+  margin-bottom: 2.6111111111rem;
+}
+
+.desc__pic {
+  width: 2.7777777778rem;
+  height: 2.7777777778rem;
+  margin-bottom: 2.0555555556rem;
+}
+
+.desc__title {
+  margin-bottom: 1.2222222222rem;
+}
