@@ -1,5 +1,20 @@
+.assortment {
+  background-color: #f8faf9;
+  position: relative;
+  background: url(../../img/assortment/patern.png) right bottom -50% no-repeat;
+
+  &:after {
+    content: url(../../img/assortment/berries.png);
+    position: absolute;
+    bottom: rem(-35px);
+    right: 0;
+
+  }
+}
+
 .assortment__switcher {
   display: flex;
+  align-items: center;
 }
 
 .assortment__item {
@@ -9,10 +24,48 @@
 
 .assortment__img {
   width: 50%;
+ 
+  &:before {
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    content: url(../../img/assortment/LeafLeft.png);
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    right: 55%;
+    content: url(../../img/assortment/LeafRight.png);
+  }
 }
 
 .assortment__description {
   flex: 1;
+}
+
+.assortment__triangle {
+  border: rem(20px) solid transparent;
+  width: 0px;
+  height: 0px;
+  border-right-color: #000;
+  border-left-width: 0px;
+  position: relative;
+  
+
+  &:after {
+    content: "";
+    border: rem(20px) solid transparent;
+    width: 0px;
+    height: 0px;
+    border-right-color: #fff;
+    border-left-width: 0px;
+    position: absolute;
+    top: rem(-20px);
+    left: rem(2px);
+    
+  }
+
 }
 
 .product__about {
@@ -62,10 +115,22 @@
   padding-right: 26%;
 }
 
+.desc__img {
+  background:  #86c3d7;
+  display: inline-block;
+  width: rem(90px);
+  height: rem(90px);
+  vertical-align: top;
+  padding: 4% 4%;
+  border-radius: rem(5px);
+  margin-bottom: rem(37px);
+}
+
 .desc__pic {
   width: rem(50px);
   height: rem(50px);
   margin-bottom: rem(37px);
+  fill: #fff;
 }
 
 .desc__title {

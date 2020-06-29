@@ -1058,8 +1058,21 @@ h2 {
   margin-right: 0;
 }
 
+.assortment {
+  background-color: #f8faf9;
+  position: relative;
+  background: url(../../img/assortment/patern.png) right bottom -50% no-repeat;
+}
+.assortment:after {
+  content: url(../../img/assortment/berries.png);
+  position: absolute;
+  bottom: -1.9444444444rem;
+  right: 0;
+}
+
 .assortment__switcher {
   display: flex;
+  align-items: center;
 }
 
 .assortment__item {
@@ -1070,9 +1083,41 @@ h2 {
 .assortment__img {
   width: 50%;
 }
+.assortment__img:before {
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  content: url(../../img/assortment/LeafLeft.png);
+}
+.assortment__img:after {
+  position: absolute;
+  bottom: 0;
+  right: 55%;
+  content: url(../../img/assortment/LeafRight.png);
+}
 
 .assortment__description {
   flex: 1;
+}
+
+.assortment__triangle {
+  border: 1.1111111111rem solid transparent;
+  width: 0px;
+  height: 0px;
+  border-right-color: #000;
+  border-left-width: 0px;
+  position: relative;
+}
+.assortment__triangle:after {
+  content: "";
+  border: 1.1111111111rem solid transparent;
+  width: 0px;
+  height: 0px;
+  border-right-color: #fff;
+  border-left-width: 0px;
+  position: absolute;
+  top: -1.1111111111rem;
+  left: 0.1111111111rem;
 }
 
 .product__about {
@@ -1121,10 +1166,22 @@ h2 {
   padding-right: 26%;
 }
 
+.desc__img {
+  background: #86c3d7;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  vertical-align: top;
+  padding: 4% 4%;
+  border-radius: 0.2777777778rem;
+  margin-bottom: 2.0555555556rem;
+}
+
 .desc__pic {
   width: 2.7777777778rem;
   height: 2.7777777778rem;
   margin-bottom: 2.0555555556rem;
+  fill: #fff;
 }
 
 .desc__title {
