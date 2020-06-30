@@ -1100,6 +1100,17 @@ h2 {
   flex: 1;
 }
 
+/* .assortment__triangle-block {
+  position: absolute;
+  left: -7%;
+  bottom: 40%;
+
+  &--right {
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    }
+  } */
 .assortment__triangle {
   border: 1.1111111111rem solid transparent;
   width: 0px;
@@ -1118,6 +1129,26 @@ h2 {
   position: absolute;
   top: -1.1111111111rem;
   left: 0.1111111111rem;
+}
+
+.assortment__triangle--right {
+  border: 1.1111111111rem solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: #000;
+  border-right-width: 0px;
+  position: relative;
+}
+.assortment__triangle--right:after {
+  content: "";
+  border: 1.1111111111rem solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: #fff;
+  border-right-width: 0px;
+  position: absolute;
+  top: -1.1111111111rem;
+  left: -1.2222222222rem;
 }
 
 .product__about {
