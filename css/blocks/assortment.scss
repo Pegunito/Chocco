@@ -20,6 +20,16 @@
 .assortment__item {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .assortment__img {
@@ -30,6 +40,11 @@
     top: 30%;
     left: -5%;
     content: url(../../img/assortment/LeafLeft.png);
+
+    @include tablets {
+      top: 30%;
+      left: 13%;
+    }
   }
 
   &:after {
@@ -37,6 +52,11 @@
     bottom: 0;
     right: 55%;
     content: url(../../img/assortment/LeafRight.png);
+
+    @include tablets {
+      right: 20%;
+      top: 51%;
+    }
   }
 }
 
@@ -44,60 +64,12 @@
   flex: 1;
 }
 
+.product__description {
 
-/* .assortment__triangle-block {
-  position: absolute;
-  left: -7%;
-  bottom: 40%;
-
-  &--right {
-    position: absolute;
-    right: 0;
-    bottom: 30%;
-    }
-  } */
-
-.assortment__triangle {
-  border: rem(20px) solid transparent;
-  width: 0px;
-  height: 0px;
-  border-right-color: #000;
-  border-left-width: 0px;
-  position: relative;
-  
-
-  &:after {
-    content: "";
-    border: rem(20px) solid transparent;
-    width: 0px;
-    height: 0px;
-    border-right-color: #fff;
-    border-left-width: 0px;
-    position: absolute;
-    top: rem(-20px);
-    left: rem(2px);
-    
-  }
-}
-
-.assortment__triangle--right {
-  border: rem(20px) solid transparent;
-  width: 0px;
-  height: 0px;
-  border-left-color: #000;
-  border-right-width: 0px;
-  position: relative;
-
-  &:after {
-    content: "";
-    border: rem(20px) solid transparent;
-    width: 0px;
-    height: 0px;
-    border-left-color: #fff;
-    border-right-width: 0px;
-    position: absolute;
-    top: rem(-20px);
-    left: rem(-22px);
+  @include tablets {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -146,6 +118,11 @@
 .product__paragraph {
   margin-bottom: rem(47px);
   padding-right: 26%;
+
+  @include tablets {
+    padding-right: 0;
+    padding: 0 6%;
+  }
 }
 
 .desc__img {
@@ -154,12 +131,17 @@
   width: rem(90px);
   height: rem(90px);
   vertical-align: top;
-  padding: 4% 4%;
+  padding: 3% 4%;
   border-radius: rem(5px);
   margin-bottom: rem(37px);
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .desc__pic {
+  position: absolute;
   width: rem(50px);
   height: rem(50px);
   margin-bottom: rem(37px);
@@ -167,9 +149,18 @@
 }
 
 .desc__title {
-  font-size: 36px;
+  font-size: rem(36px);
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
   margin-bottom: rem(22px);
+}
+
+.desc__paraghraph {
+  position: absolute;
+  bottom: 67%;
+  color: #fff;
+  font-size: rem(14px);
+  font-weight: 700;
+  text-transform: uppercase;
 }
