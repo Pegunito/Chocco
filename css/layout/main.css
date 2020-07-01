@@ -1069,6 +1069,11 @@ h2 {
   bottom: -1.9444444444rem;
   right: 0;
 }
+@media screen and (max-width: 480px) {
+  .assortment:after {
+    bottom: -15%;
+  }
+}
 
 .assortment__switcher {
   display: flex;
@@ -1093,34 +1098,65 @@ h2 {
 
 .assortment__img {
   width: 50%;
-}
-.assortment__img:before {
-  position: absolute;
-  top: 30%;
-  left: -5%;
-  content: url(../../img/assortment/LeafLeft.png);
-}
-@media screen and (max-width: 768px) {
-  .assortment__img:before {
-    top: 30%;
-    left: 13%;
-  }
-}
-.assortment__img:after {
-  position: absolute;
-  bottom: 0;
-  right: 55%;
-  content: url(../../img/assortment/LeafRight.png);
-}
-@media screen and (max-width: 768px) {
-  .assortment__img:after {
-    right: 20%;
-    top: 51%;
-  }
+  /*   &:before {
+      position: absolute;
+      top: 30%;
+      left: -5%;
+      content: url(../../img/assortment/LeafLeft.png);
+
+      @include tablets {
+        top: 30%;
+        left: 13%;
+      }
+
+      @include phones {
+        top: 3%;
+        left: 8%;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      right: 55%;
+      content: url(../../img/assortment/LeafRight.png);
+
+      @include tablets {
+        right: 20%;
+        top: 40%;
+      }
+
+      @include phones {
+        right: 9%;
+        top: 27%;
+      }
+    } */
 }
 
 .assortment__description {
   flex: 1;
+}
+
+.assortment__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.assortment__svg {
+  width: 1.9444444444rem;
+  height: 1.9444444444rem;
+  margin-right: 1.3333333333rem;
+}
+
+.assortment__item {
+  margin-bottom: 0.7777777778rem;
+}
+.assortment__item:last-child {
+  margin-bottom: 0;
+}
+
+.assortment__name {
+  margin-right: 4.0555555556rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1129,6 +1165,21 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
+}
+
+.assortment__menu {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5%;
+}
+
+.assortment__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__number {
+  margin-bottom: 1.3333333333rem;
 }
 
 .product__about {
@@ -1144,7 +1195,7 @@ h2 {
 
 .product__info {
   margin-right: 3.0555555556rem;
-  margin-bottom: 1.9444444444rem;
+  margin-bottom: 1.6666666667rem;
 }
 .product__info:last-child {
   margin-right: 0;
@@ -1182,6 +1233,11 @@ h2 {
     padding: 0 6%;
   }
 }
+@media screen and (max-width: 480px) {
+  .product__paragraph {
+    margin-bottom: 40px;
+  }
+}
 
 .desc__img {
   background: #86c3d7;
@@ -1189,7 +1245,7 @@ h2 {
   width: 5rem;
   height: 5rem;
   vertical-align: top;
-  padding: 3% 4%;
+  padding: 2% 4%;
   border-radius: 0.2777777778rem;
   margin-bottom: 2.0555555556rem;
 }
@@ -1217,7 +1273,7 @@ h2 {
 
 .desc__paraghraph {
   position: absolute;
-  bottom: 67%;
+  bottom: 86%;
   color: #fff;
   font-size: 0.7777777778rem;
   font-weight: 700;

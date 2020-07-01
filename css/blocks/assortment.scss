@@ -9,6 +9,9 @@
     bottom: rem(-35px);
     right: 0;
 
+    @include phones {
+      bottom: -15%;
+    }
   }
 }
 
@@ -35,7 +38,7 @@
 .assortment__img {
   width: 50%;
  
-  &:before {
+/*   &:before {
     position: absolute;
     top: 30%;
     left: -5%;
@@ -44,6 +47,11 @@
     @include tablets {
       top: 30%;
       left: 13%;
+    }
+
+    @include phones {
+      top: 3%;
+      left: 8%;
     }
   }
 
@@ -55,13 +63,41 @@
 
     @include tablets {
       right: 20%;
-      top: 51%;
+      top: 40%;
     }
-  }
+
+    @include phones {
+      right: 9%;
+      top: 27%;
+    }
+  } */
 }
 
 .assortment__description {
   flex: 1;
+}
+
+.assortment__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.assortment__svg {
+  width: rem(35px);
+  height: rem(35px);
+  margin-right: rem(24px);
+}
+
+.assortment__item {
+  margin-bottom: rem(14px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.assortment__name {
+  margin-right: rem(73px);
 }
 
 .product__description {
@@ -71,6 +107,21 @@
     align-items: center;
     flex-direction: column;
   }
+}
+
+.assortment__menu {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5%;
+}
+
+.assortment__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__number {
+  margin-bottom: rem(24px);
 }
 
 .product__about {
@@ -86,7 +137,7 @@
 
 .product__info {
   margin-right: rem(55px);
-  margin-bottom: rem(35px);
+  margin-bottom: rem(30px);
 
   &:last-child {
     margin-right: 0;
@@ -123,6 +174,10 @@
     padding-right: 0;
     padding: 0 6%;
   }
+
+  @include phones {
+    margin-bottom: 40px;
+  }
 }
 
 .desc__img {
@@ -131,9 +186,10 @@
   width: rem(90px);
   height: rem(90px);
   vertical-align: top;
-  padding: 3% 4%;
+  padding: 2% 4%;
   border-radius: rem(5px);
   margin-bottom: rem(37px);
+  
 
   @include tablets {
     display: none;
@@ -158,7 +214,7 @@
 
 .desc__paraghraph {
   position: absolute;
-  bottom: 67%;
+  bottom: 86%;
   color: #fff;
   font-size: rem(14px);
   font-weight: 700;
