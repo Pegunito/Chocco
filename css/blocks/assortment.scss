@@ -1,3 +1,5 @@
+///assortment
+
 .assortment {
   background-color: #f8faf9;
   position: relative;
@@ -15,9 +17,8 @@
   }
 }
 
-.assortment__switcher {
-  display: flex;
-  align-items: center;
+.assortment__img {
+width: 46%;
 }
 
 .assortment__item {
@@ -35,47 +36,13 @@
   }
 }
 
-.assortment__img {
-  width: 50%;
- 
-/*   &:before {
-    position: absolute;
-    top: 30%;
-    left: -5%;
-    content: url(../../img/assortment/LeafLeft.png);
 
-    @include tablets {
-      top: 30%;
-      left: 13%;
-    }
-
-    @include phones {
-      top: 3%;
-      left: 8%;
-    }
-  }
-
-  &:after {
-    position: absolute;
-    bottom: 0;
-    right: 55%;
-    content: url(../../img/assortment/LeafRight.png);
-
-    @include tablets {
-      right: 20%;
-      top: 40%;
-    }
-
-    @include phones {
-      right: 9%;
-      top: 27%;
-    }
-  } */
-}
 
 .assortment__description {
   flex: 1;
+  padding-left: 5%;
 }
+
 
 .assortment__list {
   display: flex;
@@ -100,6 +67,45 @@
   margin-right: rem(73px);
 }
 
+.desc__img:hover >.assortment__menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.assortment__menu {
+  display: flex;
+  flex-direction: row;
+  padding: 10% 20%;
+  left: 120%;
+  top: 16%;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: opacity .3s;
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 31%;
+    width: 20%;
+    left: -8%;
+    top: -16%;
+  }
+}
+
+.assortment__price {
+  display: flex;
+  flex-direction: column;
+}
+
+///product
+
 .product__description {
 
   @include tablets {
@@ -109,19 +115,12 @@
   }
 }
 
-.assortment__menu {
-  display: flex;
-  flex-direction: row;
-  padding: 5% 5%;
-}
-
-.assortment__price {
-  display: flex;
-  flex-direction: column;
-}
-
 .price__number {
-  margin-bottom: rem(24px);
+  margin-bottom: 170%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .product__about {
@@ -138,6 +137,10 @@
 .product__info {
   margin-right: rem(55px);
   margin-bottom: rem(30px);
+
+  @include phones {
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -157,6 +160,10 @@
 
 .product__price {
   margin-right: rem(35px);
+
+  @include phones {
+    margin-right: 0;
+  }
 }
 
 .product__price > p {
@@ -176,11 +183,14 @@
   }
 
   @include phones {
-    margin-bottom: 40px;
+    margin-bottom: 5%;
   }
 }
 
+///desc
+
 .desc__img {
+  position: relative;
   background:  #86c3d7;
   display: inline-block;
   width: rem(90px);
@@ -189,6 +199,7 @@
   padding: 2% 4%;
   border-radius: rem(5px);
   margin-bottom: rem(37px);
+  cursor: pointer;
   
 
   @include tablets {
@@ -202,6 +213,7 @@
   height: rem(50px);
   margin-bottom: rem(37px);
   fill: #fff;
+  left: 25%;
 }
 
 .desc__title {
@@ -210,13 +222,15 @@
   text-transform: uppercase;
   color: #000;
   margin-bottom: rem(22px);
+  line-height: 1;
 }
 
 .desc__paraghraph {
   position: absolute;
-  bottom: 86%;
+  bottom: 10%;
   color: #fff;
   font-size: rem(14px);
   font-weight: 700;
   text-transform: uppercase;
+  left: 22%;
 }
