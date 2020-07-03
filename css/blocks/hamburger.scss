@@ -1,8 +1,9 @@
-.hamburger {
-  width: 24px;
-  height: 20px;
-  flex-direction: column;
-  justify-content: space-between;
+.header__hamburger {
+  position: relative;
+  width: rem(34px);
+  height: rem(30px);
+  cursor: pointer;
+
   display: none;
 
   @include tablets {
@@ -10,9 +11,44 @@
   }
 }
 
-.hambrger__plank {
+.hamburger__plank {
   display: block;
-  background: #fff;
-  height: 4px;
-  border-radius: 10px;
+  width: 100%;
+  height: rem(5px);
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: .3s all linear;
+
+  &--first {
+    top: 0;
+  }
+
+  &--second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--third {
+    top: 50%;
+    transform: translateY(-50%);  
+  }
+
+  &--fourth {
+    bottom: 0;
+  }
 }
+
+.header__hamburger--active .hamburger__plank--first,
+.header__hamburger--active .hamburger__plank--fourth {
+  opacity: 0;
+}
+
+.header__hamburger--active .hamburger__plank--second {
+  transform: translateY(-50%) rotate(45deg); 
+}
+
+.header__hamburger--active .hamburger__plank--third {
+  transform: translateY(-50%) rotate(-45deg); 
+}
+

@@ -893,24 +893,54 @@ h2 {
   border-color: #365a49;
 }
 
-.hamburger {
-  width: 24px;
-  height: 20px;
-  flex-direction: column;
-  justify-content: space-between;
+.header__hamburger {
+  position: relative;
+  width: 1.8888888889rem;
+  height: 1.6666666667rem;
+  cursor: pointer;
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .hamburger {
+  .header__hamburger {
     display: inline-flex;
   }
 }
 
-.hambrger__plank {
+.hamburger__plank {
   display: block;
-  background: #fff;
-  height: 4px;
-  border-radius: 10px;
+  width: 100%;
+  height: 0.2777777778rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s all linear;
+}
+.hamburger__plank--first {
+  top: 0;
+}
+.hamburger__plank--second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger__plank--third {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger__plank--fourth {
+  bottom: 0;
+}
+
+.header__hamburger--active .hamburger__plank--first,
+.header__hamburger--active .hamburger__plank--fourth {
+  opacity: 0;
+}
+
+.header__hamburger--active .hamburger__plank--second {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.header__hamburger--active .hamburger__plank--third {
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .menu {
