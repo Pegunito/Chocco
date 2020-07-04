@@ -59,7 +59,9 @@ width: 46%;
   margin-right: rem(24px);
 }
 
-.assortment__item {
+.assortment__block {
+  display: flex;
+  align-items: center;
   margin-bottom: rem(14px);
 
   &:last-child {
@@ -106,6 +108,10 @@ width: 46%;
 .assortment__price {
   display: flex;
   flex-direction: column;
+}
+
+.assortment__arrow {
+  fill: #000;
 }
 
 ///product

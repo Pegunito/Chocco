@@ -5,7 +5,7 @@
 
   hamburger__icon.addEventListener('click', () => {
     hamburger__icon.classList.toggle("header__hamburger--active");
-    menu.classList.add("hamburger-menu--active");
+    menu.classList.toggle("hamburger-menu--active");
   });
   
 }());
