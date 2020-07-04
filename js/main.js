@@ -1,6 +1,14 @@
 (function () {
-  const header__hamburger = document.querySelector('.header__hamburger');
-    header__hamburger.addEventListener('click', () => {
-      header__hamburger.classList.toggle("header__hamburger--active");
+  const hamburger__icon = document.querySelector('.header__hamburger');
+
+  const menu = document.querySelector('.hamburger-menu');
+
+  hamburger__icon.addEventListener('click', () => {
+    hamburger__icon.classList.toggle("header__hamburger--active");
+    menu.classList.add("hamburger-menu--active");
   });
+  
 }());
+
+
+
