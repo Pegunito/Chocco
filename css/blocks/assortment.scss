@@ -83,7 +83,7 @@ width: 46%;
   flex-direction: row;
   padding: 10% 20%;
   left: 120%;
-  top: 16%;
+  top: -20%;
   opacity: 0;
   position: absolute;
   visibility: hidden;
@@ -111,7 +111,37 @@ width: 46%;
 }
 
 .assortment__arrow {
-  fill: #000;
+  position: absolute;
+  width: rem(40px);
+  height: rem(30px);
+  right: -2%;
+  top: 50%;
+
+  &--left {
+    left: -2%;
+    top: 50%;
+
+  }
+
+  @include tablets {
+    right: 15%;
+    top: 25%;
+
+    &--left {
+      left: 15%;
+      top: 25%;
+    }
+  }
+
+  @include phones {
+    right: 10%;
+    top: 15%;
+
+    &--left {
+      left: 10%;
+      top:15%;
+    }
+  }
 }
 
 ///product
@@ -126,7 +156,7 @@ width: 46%;
 }
 
 .price__number {
-  margin-bottom: 170%;
+  margin-bottom: 165%;
 
   &:last-child {
     margin-bottom: 0;
@@ -210,6 +240,10 @@ width: 46%;
   border-radius: rem(5px);
   margin-bottom: rem(37px);
   cursor: pointer;
+
+  &:hover {
+    background: #60aacc;
+  }
   
 
   @include tablets {
