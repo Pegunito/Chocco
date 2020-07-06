@@ -81,7 +81,6 @@ width: 46%;
 .assortment__menu {
   display: flex;
   flex-direction: row;
-  padding: 10% 20%;
   left: 120%;
   top: -20%;
   opacity: 0;
@@ -116,6 +115,7 @@ width: 46%;
   height: rem(30px);
   right: -2%;
   top: 50%;
+  cursor: pointer;
 
   &--left {
     left: -2%;

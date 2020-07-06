@@ -14,6 +14,14 @@ $darkGreen: #0b4d3c;
 //z-indexes
 $z-fixed-menu: 100;
 
+//убрать скролл
+
+.body {
+  &--active {
+    overflow: hidden;
+  }
+}
+
 //normalize
 @import "./normalize.css";
 

@@ -1,4 +1,8 @@
 @import "./normalize.css";
+.body--active {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Alegreya Sans";
   src: url("../../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../../fonts/alegreyasans-bold-webfont.woff") format("woff");
@@ -1199,7 +1203,6 @@ h2 {
 .assortment__menu {
   display: flex;
   flex-direction: row;
-  padding: 10% 20%;
   left: 120%;
   top: -20%;
   opacity: 0;
@@ -1233,6 +1236,7 @@ h2 {
   height: 1.6666666667rem;
   right: -2%;
   top: 50%;
+  cursor: pointer;
 }
 .assortment__arrow--left {
   left: -2%;
