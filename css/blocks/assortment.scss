@@ -18,7 +18,15 @@
 }
 
 .assortment__img {
-width: 46%;
+  width: 46%;
+
+  @include tablets {
+    width: 65%;
+  }
+
+  @include phones {
+    width: 85%;
+  }
 }
 
 .assortment__item {
@@ -81,7 +89,7 @@ width: 46%;
 .assortment__menu {
   display: flex;
   flex-direction: row;
-  left: 120%;
+  left: 100%;
   top: -20%;
   opacity: 0;
   position: absolute;
@@ -97,10 +105,10 @@ width: 46%;
     content: "";
     display: block;
     position: absolute;
-    height: 31%;
+    height: 40%;
     width: 20%;
     left: -8%;
-    top: -16%;
+    top: 1%;
   }
 }
 
@@ -134,12 +142,12 @@ width: 46%;
   }
 
   @include phones {
-    right: 10%;
-    top: 15%;
+    right: 0;
+    top: 20%;
 
     &--left {
-      left: 10%;
-      top:15%;
+      left: 0;
+      top: 20%;
     }
   }
 }
