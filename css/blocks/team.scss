@@ -1,0 +1,45 @@
+.team__list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.member__item {
+  padding: 0 1%;
+  flex: 1;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+}
+
+.member__avatar {
+  width: rem(220px);
+  height: rem(288px);
+  margin-bottom: rem(25px);
+}
+
+.member__info {
+  text-align: center;
+}
+
+
+.members__position > h4 {
+  font-size: rem(18px);
+  font-weight: 400;
+  color: #000;
+}
+
+.member__respons > p {
+  color: #666666;
+}
+
+.members__triangle {
+  width: rem(9px);
+  height: rem(6px);
+}

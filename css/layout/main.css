@@ -1403,3 +1403,45 @@ h2 {
   text-transform: uppercase;
   left: 22%;
 }
+
+.team__list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.member__item {
+  padding: 0 1%;
+  flex: 1;
+}
+.member__item:first-child {
+  padding-left: 0;
+}
+.member__item:last-child {
+  padding-right: 0;
+}
+
+.member__avatar {
+  width: 12.2222222222rem;
+  height: 16rem;
+  margin-bottom: 1.3888888889rem;
+}
+
+.member__info {
+  text-align: center;
+}
+
+.members__position > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.member__respons > p {
+  color: #666666;
+}
+
+.members__triangle {
+  width: 0.5rem;
+  height: 0.3333333333rem;
+}
