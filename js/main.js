@@ -52,9 +52,8 @@ $('.member__title').click(e =>{
 
 //slider assortment
 
-const slider = $('.assortment__switcher').bxSlider({
-  pager: false,
-  controls: false
+/* const slider = $('.assortment__switcher').slick({
+
 });
 
 $('.assortment__link--left').click(e => {
@@ -66,7 +65,7 @@ $('.assortment__link--right').click(e => {
   e.preventDefault();
   slider.goToNextSlide();
 });
-
+ */
 //slider reviews
 
 const findBlockByAlias = (alias) => {
@@ -83,7 +82,7 @@ $('.switcher-avatar__link').click(e => {
   const itemToShow = findBlockByAlias(target);
   const curItem = $this.closest('.switcher-avatar');
 
-  itemToShow.addClass("active").siblings().removeClass("active");
-  curItem.addClass("active").siblings().removeClass("active");
+  itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
+  curItem.addClass("switcher-avatar--active").siblings().removeClass("switcher-avatar--active");
 });
 
