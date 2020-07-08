@@ -1158,12 +1158,12 @@ h2 {
 }
 
 .assortment__item {
-  display: none;
+  display: flex;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
   .assortment__item {
-    display: none;
+    display: flex;
     width: 100%;
     flex: 1;
     flex-direction: column;
@@ -1171,9 +1171,6 @@ h2 {
     align-items: center;
     text-align: center;
   }
-}
-.assortment__item--active {
-  display: flex;
 }
 
 .assortment__description {
@@ -1214,7 +1211,7 @@ h2 {
   display: flex;
   flex-direction: row;
   left: 100%;
-  top: -20%;
+  top: 0;
   opacity: 0;
   position: absolute;
   visibility: hidden;
@@ -1241,33 +1238,37 @@ h2 {
 }
 
 .assortment__arrow {
-  position: absolute;
   width: 2.2222222222rem;
   height: 1.6666666667rem;
-  right: -2%;
-  top: 50%;
-  cursor: pointer;
 }
-.assortment__arrow--left {
+
+.assortment__link {
+  position: absolute;
+}
+.assortment__link--left {
   left: -2%;
   top: 50%;
 }
+.assortment__link--right {
+  right: -2%;
+  top: 50%;
+}
 @media screen and (max-width: 768px) {
-  .assortment__arrow {
+  .assortment__link--right {
     right: 15%;
     top: 25%;
   }
-  .assortment__arrow--left {
+  .assortment__link--left {
     left: 15%;
     top: 25%;
   }
 }
 @media screen and (max-width: 480px) {
-  .assortment__arrow {
+  .assortment__link--right {
     right: 0;
     top: 20%;
   }
-  .assortment__arrow--left {
+  .assortment__link--left {
     left: 0;
     top: 20%;
   }
@@ -1402,6 +1403,12 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   left: 22%;
+}
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .team__list {

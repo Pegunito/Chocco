@@ -49,3 +49,21 @@ $('.member__title').click(e =>{
   }
 
 });
+
+//slider
+
+const slider = $('.assortment__switcher').bxSlider({
+  pager: false,
+  controls: false
+});
+
+$('.assortment__link--left').click(e => {
+  e.preventDefault();
+  slider.goToPrevSlide();
+});
+
+$('.assortment__link--right').click(e => {
+  e.preventDefault();
+  slider.goToNextSlide();
+});
+

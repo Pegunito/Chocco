@@ -30,21 +30,17 @@
 }
 
 .assortment__item {
-  display: none;
+  display: flex;
   align-items: center;
 
   @include tablets {
-    display: none;
+    display: flex;
     width: 100%;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  &--active {
-    display: flex;
   }
 }
 
@@ -90,7 +86,7 @@
   display: flex;
   flex-direction: row;
   left: 100%;
-  top: -20%;
+  top: 0;
   opacity: 0;
   position: absolute;
   visibility: hidden;
@@ -118,22 +114,29 @@
 }
 
 .assortment__arrow {
-  position: absolute;
   width: rem(40px);
   height: rem(30px);
-  right: -2%;
-  top: 50%;
-  cursor: pointer;
 
+}
+
+.assortment__link {
+  position: absolute;
   &--left {
     left: -2%;
     top: 50%;
+  }
 
+  &--right {
+    right: -2%;
+    top: 50%;
   }
 
   @include tablets {
-    right: 15%;
-    top: 25%;
+    
+    &--right{
+      right: 15%;
+      top: 25%;
+    }
 
     &--left {
       left: 15%;
@@ -142,8 +145,11 @@
   }
 
   @include phones {
-    right: 0;
-    top: 20%;
+
+    &--right {
+      right: 0;
+      top: 20%;  
+    }
 
     &--left {
       left: 0;
@@ -285,4 +291,12 @@
   font-weight: 700;
   text-transform: uppercase;
   left: 22%;
+}
+
+//slider
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }

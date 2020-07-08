@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./css/layout/main.css">
   <title>Chocco</title>
 </head>
@@ -171,12 +172,16 @@
       </section>
       <section class="assortment section">
         <div class="container">
-          <svg class="assortment__arrow assortment__arrow--left">
+          <a href="" class="assortment__link assortment__link--left">
+          <svg class="assortment__arrow">
             <use xlink:href="./img/icons/sprite.svg#arrowLeft"></use>
           </svg>
+        </a>
+        <a href="" class="assortment__link assortment__link--right">
           <svg class="assortment__arrow">
             <use xlink:href="./img/icons/sprite.svg#arrowRight"></use>
           </svg>
+        </a>
           <ul class="assortment__switcher">
             <li class="assortment__item assortment__item--active">
               <div class="assortment__img">
@@ -290,7 +295,7 @@
                 </div>
               </div>
             </li>
-            <li class="assortment__item">
+            <li class="assortment__item assortment__item--active">
               <div class="assortment__img">
                 <img src="./img/assortment/LeafsandBars.png" alt="" class="assortment__pic">
               </div>
@@ -393,8 +398,6 @@
                 </div>
               </div>
             </li>
-
-          </ul>
         </div>
       </section>
       <section class="team section">
@@ -846,6 +849,7 @@
     </ul>
   </nav>
   <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
