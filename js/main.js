@@ -50,7 +50,7 @@ $('.member__title').click(e =>{
 
 });
 
-//slider
+//slider assortment
 
 const slider = $('.assortment__switcher').bxSlider({
   pager: false,
@@ -65,5 +65,25 @@ $('.assortment__link--left').click(e => {
 $('.assortment__link--right').click(e => {
   e.preventDefault();
   slider.goToNextSlide();
+});
+
+//slider reviews
+
+const findBlockByAlias = (alias) => {
+    return $(".reviews__item").filter((ndx, item)=> {
+    return $(item).attr("data-linked-with") == alias
+  });
+};
+
+$('.switcher-avatar__link').click(e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const target =$this.attr("data-open");
+  const itemToShow = findBlockByAlias(target);
+  const curItem = $this.closest('.switcher-avatar');
+
+  itemToShow.addClass("active").siblings().removeClass("active");
+  curItem.addClass("active").siblings().removeClass("active");
 });
 
