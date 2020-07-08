@@ -542,7 +542,6 @@ h2 {
 }
 
 .reviews__display {
-  min-height: 15.5555555556rem;
   display: flex;
   background: #f8faf9;
   padding: 2.7777777778rem 2.6111111111rem 2.7777777778rem;
@@ -578,22 +577,11 @@ h2 {
   }
 }
 
-.reviews__item.active {
-  position: static;
-  opacity: 1;
-  pointer-events: unset;
-}
-
 .reviews__item {
+  display: none;
+}
+.reviews__item--active {
   display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  pointer-events: none;
-  transition: 0.3s;
-  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .reviews__item {
@@ -678,8 +666,7 @@ h2 {
   overflow: hidden;
   position: relative;
 }
-
-.switcher-avatar.active {
+.switcher-avatar--active {
   border-color: #365a49;
 }
 
