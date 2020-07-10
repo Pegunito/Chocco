@@ -16,6 +16,27 @@
   
 }());
 
+//modal delivery
+
+$(".delivery_form").submit(e =>{
+  e.preventDefault();
+
+  $.fancybox.open({
+    src:"#hidden-content",
+    type:"inline"
+  })  
+});
+
+$(".btn__js-submit").click(e =>{
+  e.preventDefault();
+
+  $.fancybox.close();
+});
+
+//slider assortment
+
+
+
 //vertical acordeon
 
 const openItem = item => {
@@ -50,22 +71,6 @@ $('.member__title').click(e =>{
 
 });
 
-//slider assortment
-
-/* const slider = $('.assortment__switcher').slick({
-
-});
-
-$('.assortment__link--left').click(e => {
-  e.preventDefault();
-  slider.goToPrevSlide();
-});
-
-$('.assortment__link--right').click(e => {
-  e.preventDefault();
-  slider.goToNextSlide();
-});
- */
 //slider reviews
 
 const findBlockByAlias = (alias) => {

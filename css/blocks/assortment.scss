@@ -17,6 +17,14 @@
   }
 }
 
+.assortment__slider {
+  display: flex;
+}
+
+.assortment__switcher {
+  display: flex;
+}
+
 .assortment__img {
   width: 46%;
 
@@ -30,6 +38,7 @@
 }
 
 .assortment__item {
+  position: relative;
   display: flex;
   align-items: center;
 

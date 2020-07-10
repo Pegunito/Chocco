@@ -1143,6 +1143,14 @@ h2 {
   }
 }
 
+.assortment__slider {
+  display: flex;
+}
+
+.assortment__switcher {
+  display: flex;
+}
+
 .assortment__img {
   width: 46%;
 }
@@ -1158,6 +1166,7 @@ h2 {
 }
 
 .assortment__item {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -1517,4 +1526,28 @@ h2 {
   top: 40%;
   width: 0.5rem;
   height: 0.3333333333rem;
+}
+
+.delivery__modal {
+  width: 16.6666666667rem;
+  height: 11.1111111111rem;
+  border-radius: 10px;
+  display: none;
+  background-color: #61c4d9;
+  align-items: center;
+  z-index: 1000;
+}
+.delivery__modal-active {
+  display: flex;
+}
+
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__info > h4 {
+  font-weight: bold;
+  margin-bottom: 5%;
 }

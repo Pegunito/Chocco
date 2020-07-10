@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/layout/main.css">
   <title>Chocco</title>
 </head>
@@ -172,231 +173,234 @@
       <section class="assortment section">
         <div class="container">
           <a href="" class="assortment__link assortment__link--left">
-          <svg class="assortment__arrow">
-            <use xlink:href="./img/icons/sprite.svg#arrowLeft"></use>
-          </svg>
-        </a>
-        <a href="" class="assortment__link assortment__link--right">
-          <svg class="assortment__arrow">
-            <use xlink:href="./img/icons/sprite.svg#arrowRight"></use>
-          </svg>
-        </a>
-          <ul class="assortment__switcher">
-            <li class="assortment__item assortment__item--active">
-              <div class="assortment__img">
-                <img src="./img/assortment/Bars2.png" alt="" class="assortment__pic">
-              </div>
-              <div class="assortment__description desc">
-                <div class="desc__img">
-                  <svg class="desc__pic">
-                    <use xlink:href="./img/icons/sprite.svg#bar"></use>
-                  </svg>
-                  <div class="desc__paraghraph">
-                    <p>Состав</p>
-                  </div>
-                  <div class="assortment__menu">
-                    <ul class="assortment__list">
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#oat"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Овёс</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#seaweed"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Морские водоросли</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#almond"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Миндаль</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#powder"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Сухое молоко</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#seeds"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Тыкв. семечки</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Заменитель сахара</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#beans"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Какао бобы</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <ul class="assortment__price price">
-                      <li class="price__number">25г</li>
-                      <li class="price__number">15г</li>
-                      <li class="price__number">20г</li>
-                      <li class="price__number">10г</li>
-                      <li class="price__number">20г</li>
-                      <li class="price__number">4г</li>
-                      <li class="price__number">4г</li>
-                    </ul>
-                  </div>
+            <svg class="assortment__arrow">
+              <use xlink:href="./img/icons/sprite.svg#arrowLeft"></use>
+            </svg>
+          </a>
+          <a href="" class="assortment__link assortment__link--right">
+            <svg class="assortment__arrow">
+              <use xlink:href="./img/icons/sprite.svg#arrowRight"></use>
+            </svg>
+          </a>
+          <div class="assortment__slider">
+            <ul class="assortment__switcher">
+              <li class="assortment__item assortment__item--active">
+                <div class="assortment__img">
+                  <img src="./img/assortment/Bars2.png" alt="" class="assortment__pic">
                 </div>
-                <div class="desc__title">
-                  <h3>Батончик “Морские
-                    водоросли”</h3>
-                </div>
-                <div class="desc__info product">
-                  <div class="product__paragraph">
-                    <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
-                      сухое молоко, заменитель сахара и какао бобы.</p>
+                <div class="assortment__description desc">
+                  <div class="desc__img">
+                    <svg class="desc__pic">
+                      <use xlink:href="./img/icons/sprite.svg#bar"></use>
+                    </svg>
+                    <div class="desc__paraghraph">
+                      <p>Состав</p>
+                    </div>
+                    <div class="assortment__menu">
+                      <ul class="assortment__list">
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#oat"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Овёс</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#seaweed"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Морские водоросли</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Миндаль</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Сухое молоко</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#seeds"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Тыкв. семечки</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Заменитель сахара</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Какао бобы</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="assortment__price price">
+                        <li class="price__number">25г</li>
+                        <li class="price__number">15г</li>
+                        <li class="price__number">20г</li>
+                        <li class="price__number">10г</li>
+                        <li class="price__number">20г</li>
+                        <li class="price__number">4г</li>
+                        <li class="price__number">4г</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="product__description">
-                    <ul class="product__about">
-                      <li class="product__info">
-                        <h4>Калорийность</h4>
-                        <p>110 ккал</p>
-                      </li>
-                      <li class="product__info">
-                        <h4>Вес</h4>
-                        <p>95 грамм</p>
-                      </li>
-                    </ul>
-                    <div class="product__delivery">
-                      <div class="product__price">
-                        <p>140 Р</p>
+                  <div class="desc__title">
+                    <h3>Батончик “Морские
+                      водоросли”</h3>
+                  </div>
+                  <div class="desc__info product">
+                    <div class="product__paragraph">
+                      <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
+                        сухое молоко, заменитель сахара и какао бобы.</p>
+                    </div>
+                    <div class="product__description">
+                      <ul class="product__about">
+                        <li class="product__info">
+                          <h4>Калорийность</h4>
+                          <p>110 ккал</p>
+                        </li>
+                        <li class="product__info">
+                          <h4>Вес</h4>
+                          <p>95 грамм</p>
+                        </li>
+                      </ul>
+                      <div class="product__delivery">
+                        <div class="product__price">
+                          <p>140 Р</p>
+                        </div>
+                        <a href="" class="product__btn btn btn--theme--green">Заказать</a>
                       </div>
-                      <a href="" class="product__btn btn btn--theme--green">Заказать</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="assortment__item assortment__item--active">
-              <div class="assortment__img">
-                <img src="./img/assortment/LeafsandBars.png" alt="" class="assortment__pic">
-              </div>
-              <div class="assortment__description desc">
-                <div class="desc__img">
-                  <svg class="desc__pic">
-                    <use xlink:href="./img/icons/sprite.svg#bar"></use>
-                  </svg>
-                  <div class="desc__paraghraph">
-                    <p>Состав</p>
-                  </div>
-                  <div class="assortment__menu">
-                    <ul class="assortment__list">
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#grape"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Виноград</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#nut"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Грецкий орех</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#almond"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Кунжутное семя</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#powder"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Сухое молоко</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Заменитель сахара</p>
-                        </div>
-                      </li>
-                      <li class="assortment__block">
-                        <svg class="assortment__svg">
-                          <use xlink:href="./img/icons/sprite.svg#beans"></use>
-                        </svg>
-                        <div class="assortment__name">
-                          <p>Какао бобы</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <ul class="assortment__price price">
-                      <li class="price__number">25г</li>
-                      <li class="price__number">32г</li>
-                      <li class="price__number">20г</li>
-                      <li class="price__number">10г</li>
-                      <li class="price__number">4г</li>
-                      <li class="price__number">4г</li>
-                    </ul>
-                  </div>
+              </li>
+              <li class="assortment__item assortment__item--active">
+                <div class="assortment__img">
+                  <img src="./img/assortment/LeafsandBars.png" alt="" class="assortment__pic">
                 </div>
-                <div class="desc__title">
-                  <h3>Батончик “Гранола
-                    виноград”</h3>
-                </div>
-                <div class="desc__info product">
-                  <div class="product__paragraph">
-                    <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
-                      заменитель сахара и какао бобы.</p>
+                <div class="assortment__description desc">
+                  <div class="desc__img">
+                    <svg class="desc__pic">
+                      <use xlink:href="./img/icons/sprite.svg#bar"></use>
+                    </svg>
+                    <div class="desc__paraghraph">
+                      <p>Состав</p>
+                    </div>
+                    <div class="assortment__menu">
+                      <ul class="assortment__list">
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#grape"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Виноград</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Грецкий орех</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Кунжутное семя</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Сухое молоко</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Заменитель сахара</p>
+                          </div>
+                        </li>
+                        <li class="assortment__block">
+                          <svg class="assortment__svg">
+                            <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                          </svg>
+                          <div class="assortment__name">
+                            <p>Какао бобы</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="assortment__price price">
+                        <li class="price__number">25г</li>
+                        <li class="price__number">32г</li>
+                        <li class="price__number">20г</li>
+                        <li class="price__number">10г</li>
+                        <li class="price__number">4г</li>
+                        <li class="price__number">4г</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="product__description">
-                    <ul class="product__about">
-                      <li class="product__info">
-                        <h4>Калорийность</h4>
-                        <p>110 ккал</p>
-                      </li>
-                      <li class="product__info">
-                        <h4>Вес</h4>
-                        <p>95 грамм</p>
-                      </li>
-                    </ul>
-                    <div class="product__delivery">
-                      <div class="product__price">
-                        <p>140 Р</p>
+                  <div class="desc__title">
+                    <h3>Батончик “Гранола
+                      виноград”</h3>
+                  </div>
+                  <div class="desc__info product">
+                    <div class="product__paragraph">
+                      <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
+                        заменитель сахара и какао бобы.</p>
+                    </div>
+                    <div class="product__description">
+                      <ul class="product__about">
+                        <li class="product__info">
+                          <h4>Калорийность</h4>
+                          <p>110 ккал</p>
+                        </li>
+                        <li class="product__info">
+                          <h4>Вес</h4>
+                          <p>95 грамм</p>
+                        </li>
+                      </ul>
+                      <div class="product__delivery">
+                        <div class="product__price">
+                          <p>140 Р</p>
+                        </div>
+                        <a href="" class="product__btn btn btn--theme--green">Заказать</a>
                       </div>
-                      <a href="" class="product__btn btn btn--theme--green">Заказать</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="team section">
@@ -847,7 +851,15 @@
       <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Местоположение</a></li>
     </ul>
   </nav>
+  <div class="delivery__modal modal" id="hidden-content">
+    <div class="modal__info">
+      <h4>Сообщение отправлено!</h4>
+      <a href="" class="content__btn btn btn--theme--white btn__js-submit">Закрыть</a>
+    </div>
+  </div>
   <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
