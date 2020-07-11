@@ -18,13 +18,63 @@
 
 //modal delivery
 
+const validateFields = (form, fieldsArray) => {
+
+  fieldsArray.forEach((field) => {
+    field.removeClass("form__input--error");
+      if(field.val().trim() == "") {
+        field.addClass("form__input--error");
+    }
+  });
+  
+  const errorFields = form.find(".form__input--error");
+
+  return errorFields.length == 0;
+}
+
 $(".delivery_form").submit(e =>{
   e.preventDefault();
 
-  $.fancybox.open({
-    src:"#hidden-content",
-    type:"inline"
-  })  
+  const form = $(e.currentTarget);
+  const name = form.find("[name='name']");
+  const phone = form.find("[name='phone']");
+  const comment = form.find("[name='comment']");
+  const to = form.find("[name='to']");
+
+  const modal = $(".delivery__modal");
+  const content = modal.find(".modal__info");
+
+  const isValid = validateFields(form, [name, phone, comment, to]);
+
+
+if (isValid) {
+ const request = $.ajax ({
+    url: "https://webdev-api.loftschool.com/sendmail",
+    method: "post",
+    data: {
+      name: name.val(),
+      phone: phone.val(),
+      comment: comment.val(),
+      to: to.val(),
+    },
+   });
+
+    request.done(data => {
+      content.text(data.message);
+    });
+
+    request.fail(data => {
+      const message = data.responseJSON.message;
+      content.text(message);
+    });
+
+    request.always(() => {
+      $.fancybox.open({
+        src:"#hidden-content",
+        type:"inline"
+       });
+    });
+  }
 });
 
 $(".btn__js-submit").click(e =>{

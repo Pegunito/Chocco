@@ -1529,9 +1529,7 @@ h2 {
 }
 
 .delivery__modal {
-  width: 16.6666666667rem;
-  height: 11.1111111111rem;
-  border-radius: 10px;
+  border-radius: 20px;
   display: none;
   background-color: #61c4d9;
   align-items: center;
@@ -1541,13 +1539,19 @@ h2 {
   display: flex;
 }
 
-.modal__info {
+.modal__desc {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.modal__info > h4 {
-  font-weight: bold;
+.modal__info {
+  color: #fff;
   margin-bottom: 5%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form__input--error {
+  border-color: #61c4d9;
 }

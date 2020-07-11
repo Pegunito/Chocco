@@ -694,15 +694,16 @@
             <h2>Закажите доставку</h2>
           </div>
           <form class="delivery_form form">
+            <input type="hidden" name="to" value="kudato@mail.com">
             <div class="form__column">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="tel" class="form__input">
+                  <input type="tel" name="phone" class="form__input">
                 </label>
               </div>
               <div class="form__row">
@@ -734,7 +735,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Коментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls">
@@ -852,8 +853,10 @@
     </ul>
   </nav>
   <div class="delivery__modal modal" id="hidden-content">
-    <div class="modal__info">
-      <h4>Сообщение отправлено!</h4>
+    <div class="modal__desc">
+      <div class="modal__info">
+        <h4>Сообщение отправлено!</h4>
+      </div>
       <a href="" class="content__btn btn btn--theme--white btn__js-submit">Закрыть</a>
     </div>
   </div>
