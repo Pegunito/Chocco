@@ -1251,6 +1251,10 @@ h2 {
   height: 1.6666666667rem;
 }
 
+.slick-slide:focus, .slick-slide a {
+  outline: none;
+}
+
 .assortment__link {
   z-index: 1000000;
   position: absolute;
