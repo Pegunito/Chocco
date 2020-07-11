@@ -85,18 +85,20 @@ $(".btn__js-submit").click(e =>{
 
 //slider assortment
 
-const slider = $('.assortment__switcher').slick();
-
-$('.assortment__link--left').click(e => {
-  e.preventDefault();
-
-  slider.prevArrow();
+const slider = $('.assortment__switcher').slick ({
+  arrows: false
 });
 
-$('.assortment__link--right').click(e => {
+$(".assortment__link--left").click(e => {
   e.preventDefault();
 
-  slider.nextArrow();
+  slider.slickNext();
+});
+
+$(".assortment__link--right").click(e => {
+  e.preventDefault();
+
+  slider.slickPrev();
 });
 
 //vertical acordeon
