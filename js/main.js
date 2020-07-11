@@ -85,11 +85,12 @@ $(".btn__js-submit").click(e =>{
 
 //slider assortment
 
-const slider = $('.assortment__switcher').slick ({
-  arrows: false
+const slider = $('.assortment__switcher').slick({
+  prevArrow: $('.assortment__link--left'),
+  nextArrow: $('.assortment__link--right'),
 });
 
-$(".assortment__link--left").click(e => {
+/* $(".assortment__link--left").click(e => {
   e.preventDefault();
 
   slider.slickNext();
@@ -99,7 +100,7 @@ $(".assortment__link--right").click(e => {
   e.preventDefault();
 
   slider.slickPrev();
-});
+}); */
 
 //vertical acordeon
 
