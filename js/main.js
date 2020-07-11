@@ -85,7 +85,19 @@ $(".btn__js-submit").click(e =>{
 
 //slider assortment
 
+const slider = $('.assortment__switcher').slick();
 
+$('.assortment__link--left').click(e => {
+  e.preventDefault();
+
+  slider.prevArrow();
+});
+
+$('.assortment__link--right').click(e => {
+  e.preventDefault();
+
+  slider.nextArrow();
+});
 
 //vertical acordeon
 

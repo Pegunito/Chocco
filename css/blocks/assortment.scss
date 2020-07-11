@@ -39,7 +39,7 @@
 
 .assortment__item {
   position: relative;
-  display: flex;
+  display: flex !important;
   align-items: center;
 
   @include tablets {
