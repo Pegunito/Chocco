@@ -156,7 +156,7 @@ $(function() {
 });
 
 $(function() {
-  $(document).on("change keyup input click", "input[type='text']", function() {
+  $(document).on("change keyup input click", "[name='name']", function() {
       if(this.value.match(/[^а-яА-Яa-zA-Z\s]/g)){
           this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, "");
       };
