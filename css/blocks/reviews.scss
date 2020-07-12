@@ -50,18 +50,20 @@
   }
 }
 
+
 .reviews__item {
   display: none;
 
   &--active {
     display: flex;
-
-    @include tablets {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-    }
   }
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
 }
 
 .reviews__avatar {

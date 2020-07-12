@@ -1,0 +1,15 @@
+.delivery__modal {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #61c4d9;
+  align-items: center;
+  z-index: 1000;
+}
+.delivery__modal-active {
+  display: flex;
+}
