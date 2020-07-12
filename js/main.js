@@ -90,17 +90,6 @@ const slider = $('.assortment__switcher').slick({
   nextArrow: $('.assortment__link--right'),
 });
 
-/* $(".assortment__link--left").click(e => {
-  e.preventDefault();
-
-  slider.slickNext();
-});
-
-$(".assortment__link--right").click(e => {
-  e.preventDefault();
-
-  slider.slickPrev();
-}); */
 
 //vertical acordeon
 
@@ -154,5 +143,23 @@ $('.switcher-avatar__link').click(e => {
 
   itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
   curItem.addClass("switcher-avatar--active").siblings().removeClass("switcher-avatar--active");
+});
+
+//inputs
+
+$(function() {
+  $(document).on("change keyup input click", "input[type='tel']", function() {
+      if(this.value.match(/[^0-9]/g)){
+          this.value = this.value.replace(/[^0-9]/g, "");
+      };
+  });
+});
+
+$(function() {
+  $(document).on("change keyup input click", "input[type='text']", function() {
+      if(this.value.match(/[^а-яА-Яa-zA-Z\s]/g)){
+          this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, "");
+      };
+  });
 });
 
