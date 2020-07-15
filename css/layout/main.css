@@ -346,6 +346,14 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
+.section--font-color--white {
+  color: #fff;
+  position: relative;
+}
+.section--font-color--white h2 {
+  color: inherit;
+  margin-bottom: 0;
+}
 .section--font-color--green {
   color: #0b4d3c;
 }
@@ -1571,4 +1579,66 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.product-menu__container {
+  position: static;
+}
+
+.product-menu {
+  background: url(../../img/menu/main.png), #000;
+  background-size: cover;
+}
+
+.product-menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__item {
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__item--active .accordeon__wrap {
+  width: 35rem;
+}
+
+.accordeon__link {
+  display: flex;
+  width: 5.5555555556rem;
+  background-position: left bottom;
+  background-size: cover;
+  text-decoration: none;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2.7777777778rem;
+}
+
+.accordeon__title {
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordeon__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.accordeon__content {
+  min-width: 35rem;
+  padding: 2.7777777778rem 7.0555555556rem 2.7777777778rem 1.5rem;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1.3316666667rem;
+  height: 100%;
 }

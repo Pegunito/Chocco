@@ -5,6 +5,16 @@
   flex-direction: column;
   justify-content: center;
 
+  &--font-color--white {
+    color: #fff;
+    position: relative;
+
+    h2 {
+      color: inherit;
+      margin-bottom: 0;
+    }
+  }
+
   &--font-color--green {
     color: $darkGreen;
 
