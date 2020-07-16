@@ -233,11 +233,6 @@ $(".accordeon__svg").on("click", e => {
 });
 
 
-
-
-
-
-
 /* function Accordeon(selector) {
   const acco = document.querySelector(selector);
   const items = acco.querySelector('[data-list]').children;
@@ -265,3 +260,56 @@ $(".accordeon__svg").on("click", e => {
 }
 
 new Accordeon('#acc-menu'); */
+
+//one page scroll
+
+const sections = $("section");
+const display = $(".maincontent");
+
+let inScroll = false;
+
+sections.first().addClass("scroll");
+
+const performTransition = sectionEq => {
+
+  if (inScroll == false) {
+    inScroll = true;
+    const position = sectionEq * -100;
+
+    display.css({
+      transform: `translateY(${position}%)`
+    });
+  
+    sections.eq(sectionEq).addClass("scroll").siblings().removeClass("scroll");
+
+    setTimeout(() =>{
+      inScroll = false;
+    }, 1300);
+  }
+};
+
+const scrollViewport = direction => {
+  const activeSection = sections.filter(".scroll");
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
+
+  if (direction == "next" && nextSection.length) {
+    performTransition(nextSection.index());
+  }
+
+  if (direction == "prev" && prevSection.length) {
+    performTransition(prevSection.index());
+  }
+}
+
+$(window).on("wheel", e => {
+  const deltaY = e.originalEvent.deltaY;
+
+  if (deltaY > 0) {
+    scrollViewport("next");
+  }
+
+  if (deltaY < 0) {
+    scrollViewport("prev");
+  }
+});
