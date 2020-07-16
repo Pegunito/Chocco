@@ -313,3 +313,25 @@ $(window).on("wheel", e => {
     scrollViewport("prev");
   }
 });
+
+$(window).on("keydown", e => {
+
+const tagName = e.target.tagName.toLowerCase();
+
+if (tagName != "input" && tagName != "textarea") {
+
+  switch (e.keyCode) {
+    case 38: //prev
+      scrollViewport("prev");
+      break;
+  
+      case 40: //next
+      scrollViewport("next");
+      break;
+
+    }
+  }
+});
+
+//Навигация по ссылкам
+
