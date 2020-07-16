@@ -1434,7 +1434,6 @@ h2 {
 }
 
 .team__list {
-  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
@@ -1591,7 +1590,10 @@ input[type=number] {
 }
 
 .product-menu__title {
-  font-size: 48px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 2.6666666667rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1640,7 +1642,6 @@ input[type=number] {
 
 .accordeon__content {
   position: relative;
-  min-width: 35rem;
   padding: 2.7777777778rem 7.0555555556rem 2.7777777778rem 1.5rem;
   overflow-y: auto;
   background-color: rgba(51, 53, 55, 0.93);

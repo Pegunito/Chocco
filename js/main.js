@@ -165,7 +165,80 @@ $(function() {
 
 //acordeon menu
 
-function Accordeon(selector) {
+const messureWidth = (item) => {
+  let reqItemWidth = 0;
+  const screenWidth = $(window).width();
+  const container = item.closest(".product-menu__list");
+  const titlesBlocks = container.find(".accordeon__link");
+  const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
+
+  const textContainer = item.find(".accordeon__content");
+  const paddingLeft = parseInt(textContainer.css("padding-left"));
+  const paddingRight = parseInt(textContainer.css("padding-right"));
+
+
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    reqItemWidth = screenWidth - titlesWidth;
+  } else {
+    reqItemWidth = 500;
+  }
+
+  return {
+    container: reqItemWidth,
+    textContainer: reqItemWidth - paddingLeft - paddingRight
+  }
+};
+
+const closeEveryItemInContainer = container => {
+  const items = container.find(".accordeon__item");
+  const content = container.find(".accordeon__wrap");
+
+  items.removeClass("active");
+  content.width(0);
+}
+
+const openAcco = item => {
+
+  const hiddenContent = item.find(".accordeon__wrap");
+  const reqWidth = messureWidth(item);
+
+  const textBlock = item.find(".accordeon__content");
+
+  item.addClass("active");
+  hiddenContent.width(reqWidth.container);
+  textBlock.width(reqWidth.textContainer);
+};
+
+$(".accordeon__link").on("click", e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const item = $this.closest(".accordeon__item");
+  const itemOpened = item.hasClass("active");
+  const container = $this.closest(".product-menu__list");
+
+  if (itemOpened) {
+    closeEveryItemInContainer(container);
+  } else {
+    closeEveryItemInContainer(container);
+    openAcco(item);
+  }
+
+});
+
+$(".accordeon__svg").on("click", e => {
+  closeEveryItemInContainer($('.product-menu__list'));
+});
+
+
+
+
+
+
+
+/* function Accordeon(selector) {
   const acco = document.querySelector(selector);
   const items = acco.querySelector('[data-list]').children;
   
@@ -191,29 +264,4 @@ function Accordeon(selector) {
   });
 }
 
-new Accordeon('#acc-menu');
-
-const messureWidth = item => {
-
-const screenWidth = $(window).width();
-const container = item.closest(".product-menu__list");
-const titleBlock = container.find(".accordeon__title");
-const titleWidth = titleBlock.width() * titleBlock.length;
-
-const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-if (isMobile) {
-  return screenWidth - titleWidth;
-
-} else {
-  return 630;
-}
-
-};
-
-const mobileScreen = (item) => {
-  const hiddenContent = item.find(".accordeon__wrap");
-  const reqWidth = messureWidth(item);
-
-  hiddenContent.width(reqWidth);
-};
+new Accordeon('#acc-menu'); */

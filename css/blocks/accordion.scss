@@ -8,9 +8,13 @@
 }
 
 .product-menu__title {
-    font-size: 48px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
+
 }
 
 .product-menu__list {
@@ -58,7 +62,6 @@
 
 .accordeon__content {
     position: relative;
-    min-width: rem(630px);
     padding: rem(50px) rem(127px) rem(50px) rem(27px);
     overflow-y: auto;
     background-color: rgba(51,53,55, .93);
