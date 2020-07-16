@@ -192,3 +192,28 @@ function Accordeon(selector) {
 }
 
 new Accordeon('#acc-menu');
+
+const messureWidth = item => {
+
+const screenWidth = $(window).width();
+const container = item.closest(".product-menu__list");
+const titleBlock = container.find(".accordeon__title");
+const titleWidth = titleBlock.width() * titleBlock.length;
+
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+if (isMobile) {
+  return screenWidth - titleWidth;
+
+} else {
+  return 630;
+}
+
+};
+
+const mobileScreen = (item) => {
+  const hiddenContent = item.find(".accordeon__wrap");
+  const reqWidth = messureWidth(item);
+
+  hiddenContent.width(reqWidth);
+};

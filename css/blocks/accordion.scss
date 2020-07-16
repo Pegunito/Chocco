@@ -7,6 +7,12 @@
     background-size: cover;
 }
 
+.product-menu__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .product-menu__list {
     position: absolute;
     top: 0;
@@ -51,6 +57,7 @@
 }
 
 .accordeon__content {
+    position: relative;
     min-width: rem(630px);
     padding: rem(50px) rem(127px) rem(50px) rem(27px);
     overflow-y: auto;
@@ -59,4 +66,14 @@
     font-weight: 400;
     line-height: rem(23.97px);
     height: 100%;
+}
+
+.accordeon__svg {
+    position: absolute;
+    width: rem(18px);
+    height: rem(18px);
+    fill: #fff;
+    right: 4%;
+    top: 4%;
+    cursor: pointer;
 }
