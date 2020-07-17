@@ -1667,3 +1667,129 @@ input[type=number] {
   top: 4%;
   cursor: pointer;
 }
+
+.player-section {
+  position: relative;
+  background-color: #f8faf9;
+}
+
+.player-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    max-height: 295px;
+  }
+}
+
+.player__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+.player__controls {
+  display: flex;
+  flex-direction: row;
+  background-color: #404040;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    justify-content: space-between;
+  }
+}
+
+.player__playback {
+  display: flex;
+  align-items: center;
+}
+
+.player__start:hover {
+  cursor: pointer;
+}
+
+.player__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+@media screen and (max-width: 480px) {
+  .player__volume {
+    width: 33%;
+  }
+}
+
+.volume__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  iframe#yt-player {
+    width: 100%;
+  }
+}
