@@ -5,7 +5,7 @@
 
   const menu = document.querySelector('.hamburger-menu');
 
-  const scroll = document.querySelector('body')
+  const scroll = document.querySelector('body');
 
   hamburger__icon.addEventListener('click', () => {
     hamburger__icon.classList.toggle("header__hamburger--active");
@@ -266,26 +266,54 @@ new Accordeon('#acc-menu'); */
 const sections = $("section");
 const display = $(".maincontent");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+//hover fixed-menu
+const sidemenu = $(".fixed-menu");
+//
+
 let inScroll = false;
 
 sections.first().addClass("scroll");
 
+const countSectionPosition = sectionEq => {
+  return sectionEq * -100;
+}
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+  items.eq(itemEq).addClass(activeClass).siblings().remove(activeClass);
+} 
+
 const performTransition = sectionEq => {
 
-  if (inScroll == false) {
+  if (inScroll) return;
+
+  const transitionOver = 1000;
+  const mouseInertiaOver = 300;
+
     inScroll = true;
-    const position = sectionEq * -100;
+    const position = countSectionPosition(sectionEq);
 
     display.css({
       transform: `translateY(${position}%)`
     });
   
+    resetActiveClassForItem(sections, sectionEq, "scroll");
     sections.eq(sectionEq).addClass("scroll").siblings().removeClass("scroll");
 
     setTimeout(() =>{
       inScroll = false;
-    }, 1300);
-  }
+
+      //hover fixed-menu
+      sidemenu
+      .find(".fixed-menu__item")
+      .eq(sectionEq)
+      .addClass("fixed-menu__item--active")
+      .siblings().removeClass("fixed-menu__item--active");
+      //
+
+    }, transitionOver + mouseInertiaOver);
 };
 
 const scrollViewport = direction => {
@@ -314,11 +342,14 @@ $(window).on("wheel", e => {
   }
 });
 
+//Not to scroll in inputs
+
 $(window).on("keydown", e => {
 
 const tagName = e.target.tagName.toLowerCase();
+const userTypingInInputs = tagName == "input" || tagName == "textarea";
 
-if (tagName != "input" && tagName != "textarea") {
+if (userTypingInInputs) return;
 
   switch (e.keyCode) {
     case 38: //prev
@@ -330,8 +361,37 @@ if (tagName != "input" && tagName != "textarea") {
       break;
 
     }
-  }
 });
 
 //Навигация по ссылкам
 
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
+$("[data-scroll-to]").click(e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const target = $this.attr("data-scroll-to");
+  const reqSection = $(`[data-section-id=${target}]`);
+
+  performTransition(reqSection.index());
+});
+
+if (isMobile) {
+  //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+
+$("body").swipe( {
+  
+  swipe: function( event, direction) {
+    const scroller = viewportScroller();
+    let scrollDirection = "";
+
+    if (direction == "up") scrollDirection = "next";
+    if (direction == "down") scrollDirection = "prev";
+
+    scroller[scrollDirection]();
+
+    alert(direction);
+    },
+  });
+}
