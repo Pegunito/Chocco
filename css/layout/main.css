@@ -1668,12 +1668,12 @@ input[type=number] {
   cursor: pointer;
 }
 
-.player-section {
+.video {
   position: relative;
   background-color: #f8faf9;
 }
 
-.player-section__container {
+.video-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1785,7 +1785,7 @@ input[type=number] {
   height: 4px;
   position: absolute;
   display: block;
-  background: url(https://2.downloader.disk.yandex.ru/preview/8e8c5ede4a68456bd7a99ae9b59178050e0a004a4d6f76920e46ed876029d85e/inf/QnDpUUqjBF1j1yM6WHc6rx6DcDR5mbi9_EZPJrtm7fdtXRE3zoD-qXI1gcLFyGWovjtDzAHgymyYH6nBksLi6A%3D%3D?uid=208008506&filename=video-stick.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background: url("") no-repeat;
 }
 
 .player__playback-button {
@@ -1817,13 +1817,13 @@ input[type=number] {
   width: 40px;
   height: 20px;
   border: none;
-  background: url(https://3.downloader.disk.yandex.ru/preview/dd1c13e1cfa4998ec4fd83e4f735143ae26cc56e61d48abd636fcd7fc514642e/inf/Sa0DnSH3Gm5XTdLi7wpgi6LRT4klZFjb2YRDc_TULm5JYMf1ExakB5UdL9tdpYPp-6r2r8JkxJ03tP7rNgJyqg%3D%3D?uid=208008506&filename=volume.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background: url("../../img/icons/volume.svg") no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 
 .volume__pic--nosound {
-  background: url(https://3.downloader.disk.yandex.ru/preview/1ff454e4c736305985da183fd24879025f9278733ea0823742a1310ba5c33187/inf/J2wFxh0439UVOFRqa4BruzKhyyoFv8zjYXJ914XWi_3DZRLUUWAlfEmMBASHYA_Tji0GJJnPoGiV8N4Z3HA2PQ%3D%3D?uid=208008506&filename=nosoud.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background: url("") no-repeat;
   background-position: center;
 }
 
@@ -1839,7 +1839,7 @@ input[type=number] {
   height: 4px;
   position: absolute;
   display: block;
-  background: url(https://4.downloader.disk.yandex.ru/preview/c09e44711603cd3cd1eb90cb25ff290e597641566ae7e07029401d6fdc5ceeff/inf/5a363NrPVq6DSHlgEijAUKLRT4klZFjb2YRDc_TULm52KC73enbkg20lUUmO4YPfw8hV3TeKFvdS2CVlLy96qw%3D%3D?uid=208008506&filename=volume-stick.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=208008506&tknv=v2&size=1903x937) no-repeat;
+  background: url("") no-repeat;
 }
 
 .volume__playback-button {
