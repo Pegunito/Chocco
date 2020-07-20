@@ -1,3 +1,19 @@
+//Yandex map
+
+let myMap;
+
+const init = () => {
+  myMap = new ymaps.Map("map", {
+    center: [59.935274, 30.312388],
+    zoom: 11,
+    controls: []
+  });
+
+
+};
+
+ymaps.ready(init);
+
 //youtube api 
 
 let player;
