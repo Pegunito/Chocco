@@ -85,7 +85,7 @@
 
 .player__start {
   width: 55px;
-  height: 100%;
+  height: 50%;
   border: none;
   background: url("../../img/icons/play.svg") no-repeat;
   background-position: center;
@@ -116,7 +116,7 @@
     height: 4px;
     position: absolute;
     display: block;
-    background: url("") no-repeat;
+    background: url("../../img/video/videoLine.svg") no-repeat;
   }
 }
 
@@ -170,7 +170,7 @@
     height: 4px;
     position: absolute;
     display: block;
-    background: url("") no-repeat;
+    background: url("../../img/video/soundLine.png") no-repeat;
   }
 }
 
