@@ -921,6 +921,7 @@ h2 {
   width: 1.8888888889rem;
   height: 1.6666666667rem;
   cursor: pointer;
+  z-index: 99999;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -938,7 +939,6 @@ h2 {
   border-radius: 0.5555555556rem;
   left: 0;
   transition: 0.3s all linear;
-  z-index: 999999;
 }
 .hamburger__plank--first {
   top: 0;

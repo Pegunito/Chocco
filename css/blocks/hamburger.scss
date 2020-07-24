@@ -3,6 +3,7 @@
   width: rem(34px);
   height: rem(30px);
   cursor: pointer;
+  z-index: 99999;
 
   display: none;
 
@@ -20,7 +21,6 @@
   border-radius: rem(10px);
   left: 0;
   transition: .3s all linear;
-  z-index: 999999;
 
   &--first {
     top: 0;
