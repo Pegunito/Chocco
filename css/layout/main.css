@@ -118,7 +118,7 @@ h2 {
 .hero {
   background: url("../../img/intro/patern.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
@@ -346,7 +346,7 @@ h2 {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
