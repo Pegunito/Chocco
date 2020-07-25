@@ -921,7 +921,7 @@ h2 {
   width: 1.8888888889rem;
   height: 1.6666666667rem;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 100;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -977,9 +977,11 @@ h2 {
   bottom: 0;
   top: 0;
   background-color: #61c4d9;
+  z-index: 90;
 }
 .hamburger-menu--active {
   display: flex;
+  width: 100vw;
 }
 
 .hamburger-menu__list {
