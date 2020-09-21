@@ -95,9 +95,15 @@ button {
 
 .wrapper {
   position: relative;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   width: 100%;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 h2 {
@@ -112,7 +118,7 @@ h2 {
 .hero {
   background: url("../../img/intro/patern.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
@@ -340,11 +346,19 @@ h2 {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section--font-color--white {
+  color: #fff;
+  position: relative;
+}
+.section--font-color--white h2 {
+  color: inherit;
+  margin-bottom: 0;
 }
 .section--font-color--green {
   color: #0b4d3c;
@@ -907,6 +921,7 @@ h2 {
   width: 1.8888888889rem;
   height: 1.6666666667rem;
   cursor: pointer;
+  z-index: 100;
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -924,7 +939,6 @@ h2 {
   border-radius: 0.5555555556rem;
   left: 0;
   transition: 0.3s all linear;
-  z-index: 999999;
 }
 .hamburger__plank--first {
   top: 0;
@@ -963,9 +977,11 @@ h2 {
   bottom: 0;
   top: 0;
   background-color: #61c4d9;
+  z-index: 90;
 }
 .hamburger-menu--active {
   display: flex;
+  width: 100vw;
 }
 
 .hamburger-menu__list {
@@ -1426,7 +1442,6 @@ h2 {
 }
 
 .team__list {
-  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
@@ -1571,4 +1586,279 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.product-menu__container {
+  position: static;
+}
+
+.product-menu {
+  background: url(../../img/menu/main.png), #000;
+  background-size: cover;
+}
+
+.product-menu__title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-menu__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__item {
+  height: 100%;
+  display: flex;
+}
+
+.active .accordeon__wrap {
+  width: 35rem;
+}
+
+.accordeon__link {
+  display: flex;
+  width: 5.5555555556rem;
+  background-position: left bottom;
+  background-size: cover;
+  background-color: black;
+  text-decoration: none;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2.7777777778rem;
+}
+
+.accordeon__title {
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordeon__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.accordeon__content {
+  position: relative;
+  padding: 2.7777777778rem 7.0555555556rem 2.7777777778rem 1.5rem;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1.3316666667rem;
+  height: 100%;
+}
+
+.accordeon__svg {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+  right: 4%;
+  top: 4%;
+  cursor: pointer;
+}
+
+.video {
+  position: relative;
+  background-color: #f8faf9;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    max-height: 295px;
+  }
+}
+
+.player__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.player__splash img {
+  width: 100%;
+  height: 90%;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+.player__controls {
+  display: flex;
+  flex-direction: row;
+  background-color: #404040;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    justify-content: space-between;
+  }
+}
+
+.player__playback {
+  display: flex;
+  align-items: center;
+}
+
+.player__start {
+  width: 55px;
+  height: 50%;
+  border: none;
+  background: url("../../img/icons/play.svg") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.player--paused {
+  background: url() no-repeat;
+  background-position: center;
+}
+
+.player__start:hover {
+  cursor: pointer;
+}
+
+.player__playback {
+  width: 68%;
+  position: relative;
+  margin-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 35%;
+  }
+}
+.player__playback::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  display: block;
+  background: url("../../img/video/videoLine.svg") no-repeat;
+}
+
+.player__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+@media screen and (max-width: 480px) {
+  .player__volume {
+    width: 33%;
+  }
+}
+
+.volume__pic {
+  width: 40px;
+  height: 20px;
+  border: none;
+  background: url("../../img/icons/volume.svg") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.volume__pic--nosound {
+  background: url("") no-repeat;
+  background-position: center;
+}
+
+.volume__playback {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.volume__playback::before {
+  content: "";
+  width: 90%;
+  height: 4px;
+  position: absolute;
+  display: block;
+  background: url("../../img/video/soundLine.png") no-repeat;
+}
+
+.volume__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  iframe#yt-player {
+    width: 100%;
+  }
 }
