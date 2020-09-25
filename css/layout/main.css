@@ -880,7 +880,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
-    top: 60%;
+    display: none;
   }
 }
 
