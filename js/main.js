@@ -576,13 +576,20 @@ if (isMobile) {
 $("body").swipe ({
   
   swipe: function( event, direction) {
-    const scroller = viewportScroller();
-    let scrollDirection = "";
+    // console.log(event);
+		// console.log(direction);
+		
+    // const scroller = viewportScroller();
+    // let scrollDirection = "";
 
-    if (direction == "up") scrollDirection = "next";
-    if (direction == "down") scrollDirection = "prev";
+    if (direction == "up") {
+			scrollViewport("next");
+		};
+    if (direction == "down") {
+			scrollViewport("prev");
+		}
 
-    scroller[scrollDirection]();
+    // scroller[scrollDirection]();
 
     },
   });
